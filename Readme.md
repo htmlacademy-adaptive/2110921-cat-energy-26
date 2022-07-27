@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
-* Студент: [Надежда Стрельникова](https://up.htmlacademy.ru/adaptive/26/user/2110921).
-* Наставник: `Неизвестно`.
+- Студент: [Надежда Стрельникова](https://up.htmlacademy.ru/adaptive/26/user/2110921).
+- Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
