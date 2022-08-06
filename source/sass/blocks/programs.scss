@@ -5,7 +5,7 @@
 }
 
 .programs__item {
-  background-color: #f2f2f2;
+  background-color: var(--special-light-color);
 }
 
 .programs__title {
@@ -19,14 +19,14 @@
 .programs__description {
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: var(--special-deep-color-medium);
 }
 
 .programs__link {
   font-family: var(--second-font);
   font-size: 16px;
   line-height: 16px;
-  color: #000000;
+  color: var(--main-color-dark);
   text-transform: uppercase;
   text-decoration: none;
 }

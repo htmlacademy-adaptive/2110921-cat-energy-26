@@ -1,10 +1,10 @@
 .last-card__title {
-  color: #111111;
+  color: var(--special-deep-color);
 }
 
 .last-card__text {
   font-family: var(--main-font);
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
+  color: var(--special-deep-color-medium);
 }

@@ -1,8 +1,15 @@
 .promo {
   font-family: var(--second-font);
-  background-color: rgba(104, 183, 56, 0.85);
-  color: #ffffff;
+  background-color: var(--main-color);
+  color: var(--main-color);
   text-align: center;
+}
+
+.promo__background-wrapper {
+  background-color: var(--basic-color-light);
+  background-image: url("../../img/cat-background-main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 

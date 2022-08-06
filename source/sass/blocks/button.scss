@@ -1,8 +1,8 @@
 .button {
   display: block;
   font-family: var(--second-font);
-  background-color: #68b738;
-  color: #ffffff;
+  background-color: var(--basic-color);
+  color: var(--main-color);
   text-align: center;
   padding: 7px 44px;
   font-size: 14px;
@@ -12,8 +12,8 @@
   text-decoration: none;
 
   &--modifier {
-    background-color: #f2f2f2;
-    color: #444444;
+    background-color: var(--special-light-color);
+    color: var(--special-deep-color-medium);
   }
 }
 

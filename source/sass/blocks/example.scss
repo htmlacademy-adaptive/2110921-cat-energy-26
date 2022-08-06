@@ -1,5 +1,5 @@
 .example {
-  background-color: #eaeaea;
+  background-color: var(--special-light-color-nornal);
 }
 
 .example__title {
@@ -12,7 +12,7 @@
 .example__description {
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: var(--special-deep-color-medium);
 }
 
 .example__value {
@@ -25,7 +25,7 @@
 .example__text {
   font-size: 12px;
   line-height: 12px;
-  color: #444444;
+  color: var(--special-deep-color-medium);
 }
 
 .example__cost {

@@ -1,5 +1,5 @@
 .address--alternative {
-  background-color: #ffffff;
+  background-color: var(--main-color);
 }
 
 .address__collaboration {
@@ -7,12 +7,12 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: var(--special-deep-color);
   text-transform: uppercase;
 }
 
 .address__text {
   font-size: 14px;
   line-height: 20px;
-  color: #444444;
+  color: var(--special-deep-color-medium);
 }

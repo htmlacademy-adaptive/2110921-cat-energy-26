@@ -4,7 +4,7 @@
 }
 
 .form__field-label {
-  color: #444444;
+  color: var(--special-deep-color-medium);
   text-transform: uppercase;
 }
 
@@ -15,7 +15,7 @@
   text-transform: uppercase;
 
   &::placeholder {
-    color: #444444;
+    color: var(--special-deep-color-medium);
   }
 }
 
@@ -31,7 +31,7 @@
   text-transform: uppercase;
 
   &::placeholder {
-    color: #444444;
+    color: var(--special-deep-color-medium);
   }
 }
 
