@@ -1,15 +1,13 @@
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/oswaldregular.woff") format("woff");
-  src: url("../fonts/oswaldregular.woff2") format("woff2");
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/oswaldmedium.woff") format("woff");
-  src: url("../fonts/oswaldmedium.woff2") format("woff2");
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -50,6 +48,10 @@
   font-family: var(--second-font);
 }
 
+.logo {
+  text-decoration: none;
+}
+
 .site-list {
   margin: 0;
   padding: 0;
@@ -74,7 +76,7 @@
 
 .promo__background-wrapper {
   background-color: var(--basic-color-light);
-  background-image: url("../../img/cat-background-main.jpg");
+  background-image: url("../img/cat-background-main.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -111,7 +113,7 @@
   border: none;
   text-decoration: none;
 }
-.button--modifier {
+.button--show {
   background-color: var(--special-light-color);
   color: var(--special-deep-color-medium);
 }
@@ -421,7 +423,7 @@
   line-height: 20px;
   color: var(--main-color);
   background-color: var(--basic-color-light);
-  background-image: url("../../img/cat-in-bag.jpg");
+  background-image: url("../img/cat-in-bag.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
