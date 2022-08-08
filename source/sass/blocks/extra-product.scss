@@ -1,0 +1,15 @@
+.extra-product__title {
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--special-deep-color-dark);
+  text-transform: uppercase;
+}
+
+.extra-product__price {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--special-deep-color-medium);
+}

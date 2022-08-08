@@ -1,0 +1,48 @@
+
+.form__field {
+  border: none;
+}
+
+.form__field-label {
+  color: var(--special-deep-color-medium);
+  text-transform: uppercase;
+}
+
+.form__field-value {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &::placeholder {
+    color: var(--special-deep-color-medium);
+  }
+}
+
+.form__legend {
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.form__text {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &::placeholder {
+    color: var(--special-deep-color-medium);
+  }
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form__legend-fields {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 16px;
+}

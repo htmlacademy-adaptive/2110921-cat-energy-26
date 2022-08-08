@@ -4,11 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>Подбор программы</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="header">
-    <a class="header__logo logo">
+    <a class="header__logo logo" href="index.html">
       <img class="logo__image" src="img/cat-logo-mobile.svg" width="34" height="38" alt="Логотип с изображением кота.">
       <img class="logo__label" src="img/logo-cat-energy.svg" width="101" height="18" alt="Логотип Кэт энерджи.">
     </a>
@@ -19,13 +20,13 @@
       <div class="navigation__wrapper">
         <ul class="navigation__list site-list">
           <li class="site-list__item">
-            <a href="index.html">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a>Подбор программы</a>
+            <a class="site-list__link">Подбор программы</a>
           </li>
         </ul>
       </div>
@@ -57,73 +58,61 @@
         <fieldset class="form__field goal">
           <legend class="visually-hidden">Цель</legend>
           <ul class="goal__list">
-            <li class="goal__item">
-              <label class="goal__item-label radio">
-                <input class="radio__control" type="radio" name="main-goal" value="weight-loss" checked>
-                <span class="radio__label">Похудение</span>
-              </label>
+            <li class="goal__item radio">
+              <input class="radio__control" type="radio" name="main-goal" id="weight-loss" value="weight-loss" checked>
+              <label class="radio__label" for="weight-loss">Похудение</label>
             </li>
-            <li class="goal__item">
-              <label class="goal__item-label radio">
-                <input class="radio__control" type="radio" name="main-goal" value="weight-gain">
-                <span class="radio__label">Набор массы</span>
-              </label>
+            <li class="goal__item radio">
+              <input class="radio__control" type="radio" name="main-goal" id="weight-gain" value="weight-gain">
+              <label class="radio__label" for="weight-gain">Набор массы</label>
             </li>
-            <li class="goal__item">
-              <label class="goal__item-label radio">
-                <input class="radio__control" type="radio" name="main-goal" value="help">
-                <span class="radio__label">Не знаю (нужен ваш совет)</span>
-              </label>
+            <li class="goal__item radio">
+              <input class="radio__control" type="radio" name="main-goal" id="help" value="help">
+              <label class="radio__label" for="help">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__field">
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
           <div class="form__field-wrapper">
-            <label class="form__field-label">E-mail:*</label>
-            <input class="form__field-value" type="email" placeholder="kuklachev@gmail.com" required>
+            <label class="form__field-label" for="email">E-mail:*</label>
+            <input class="form__field-value" type="email" name="email" id="email" placeholder="kuklachev@gmail.com"
+              required>
           </div>
           <div class="form__field-wrapper">
-            <label class="form__field-label">Телефон:*</label>
-            <input class="form__field-value" type="tel" placeholder="8 (960) 900-60-90" required>
+            <label class="form__field-label" for="tel">Телефон:*</label>
+            <input class="form__field-value" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
           </div>
         </fieldset>
         <fieldset class="form__field">
           <legend class="form__legend">Комментарий</legend>
-          <textarea class="form__text" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="form__text" name="comments" rows="10"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__field">
           <legend class="form__legend">Дополнительно</legend>
           <ul class="form__list">
-            <li class="form__item">
-              <label class="form__field-label checkbox">
-                <input class="checkbox__control" type="checkbox" name="sweetener" checked>
-                <span class="checkbox__label">Cахарозаменитель</span>
-              </label>
+            <li class="form__item checkbox">
+              <input class="checkbox__control" type="checkbox" name="sweetener" id="sweetener" checked>
+              <label class="checkbox__label" for="sweetener">Cахарозаменитель</label>
             </li>
-            <li class="form__item">
-              <label class="form__field-label checkbox">
-                <input class="checkbox__control" type="checkbox" name="water">
-                <span class="checkbox__label">Питьевая вода</span>
-              </label>
+            <li class="form__item checkbox">
+              <input class="checkbox__control" type="checkbox" name="water" id="water">
+              <label class="checkbox__label" for="water">Питьевая вода </label>
             </li>
-            <li class="form__item">
-              <label class="form__field-label checkbox">
-                <input class="checkbox__control" type="checkbox" name="milk">
-                <span class="checkbox__label">Молоко</span>
-              </label>
+            <li class="form__item checkbox">
+              <input class="checkbox__control" type="checkbox" name="milk" id="milk">
+              <label class="checkbox__label" for="milk">Молоко</label>
             </li>
-            <li class="form__item">
-              <label class="form__field-label checkbox">
-                <input class="checkbox__control" type="checkbox" name="vitamins">
-                <span class="checkbox__label">Витамины</span>
-              </label>
+            <li class="form__item checkbox">
+              <input class="checkbox__control" type="checkbox" name="vitamins" id="vitamins">
+              <label class="checkbox__label" for="vitamins">Витамины</label>
             </li>
           </ul>
         </fieldset>
         <div class="form__button-wrapper">
           <button class="form__button button" type="submit">Отправить заявку</button>
-          <p class="form__legend">* — Обязательные поля</p>
+          <p class="form__legend-fields">* — Обязательные поля</p>
         </div>
       </form>
     </section>

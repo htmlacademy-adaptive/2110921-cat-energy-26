@@ -1,0 +1,32 @@
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.programs__item {
+  background-color: var(--special-light-color);
+}
+
+.programs__title {
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.programs__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--special-deep-color-medium);
+}
+
+.programs__link {
+  font-family: var(--second-font);
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--main-color-dark);
+  text-transform: uppercase;
+  text-decoration: none;
+}

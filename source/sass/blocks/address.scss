@@ -1,0 +1,18 @@
+.address--alternative {
+  background-color: var(--main-color);
+}
+
+.address__collaboration {
+  font-family: var(--second-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--special-deep-color);
+  text-transform: uppercase;
+}
+
+.address__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--special-deep-color-medium);
+}
