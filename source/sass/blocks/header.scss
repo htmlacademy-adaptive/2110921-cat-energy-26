@@ -1,3 +1,20 @@
 .header {
   font-family: var(--second-font);
+  min-width: 320px;
+}
+
+.header__wrapper {
+  display: flex;
+  width: 280px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 980px;
+    padding: 0 110px;
+  }
 }
