@@ -1,10 +1,5 @@
-.slide__toggle {
-  border: none;
-}
-
-.slide__toggle-label {
-  font-family: var(--second-font);
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
+.slide__scale {
+  height: 256px;
+  width: 4px;
+  background-color: var(--special-deep-color-normal);
 }

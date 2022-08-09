@@ -1,12 +1,21 @@
 
 .site-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 442px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 480px;
+  }
 }
 
 .site-list__link {
