@@ -2,6 +2,7 @@
 @import "fonts.scss";
 @import "visually-hidden.scss";
 @import "global.scss";
+@import "container.scss";
 // blocks
 @import "./blocks/page.scss";
 @import "./blocks/header.scss";
@@ -30,4 +31,5 @@
 @import "./blocks/last-card.scss";
 @import "./blocks/additional-product.scss";
 @import "./blocks/extra-product.scss";
+@import "./blocks/price.scss";
 @import "./blocks/special-offer.scss";
