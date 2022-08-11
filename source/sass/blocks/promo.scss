@@ -5,11 +5,18 @@
   text-align: center;
 }
 
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .promo__background-wrapper {
   background-color: var(--basic-color-light);
   background-image: url("../img/cat-background-main.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 302px;
 }
 
 
@@ -30,4 +37,8 @@
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.promo__image {
+  display: block;
 }

@@ -1,15 +1,12 @@
-.logo {
+.price {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  min-width: 190px;
-  text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    min-width: 174px;
+    justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 202px;
+    justify-content: space-between;
   }
 }

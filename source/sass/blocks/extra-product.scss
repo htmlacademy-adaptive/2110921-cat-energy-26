@@ -1,3 +1,18 @@
+.extra-product__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 316px 316px;
+  }
+}
+
+.extra-product {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .extra-product__title {
   font-family: var(--second-font);
   font-weight: 400;
