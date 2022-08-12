@@ -8,19 +8,40 @@
   }
 }
 
+
 .promo__wrapper {
   padding-top: 27px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  @media (min-width: $desktop-width) {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 694px;
+      background-image: url("../img/cat-background-desktop.jpg");
+      background-color: var(--basic-color-light);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+      display: block;
+      z-index: -1;
+    }
+
+    height: 694px;
+    flex-direction: row;
+    align-items: start;
   }
 }
 
+
 .promo__background-wrapper {
   position: relative;
+  height: 302px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -37,7 +58,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--main-color);
-  min-height: 302px;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
