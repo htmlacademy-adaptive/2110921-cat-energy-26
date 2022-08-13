@@ -10,24 +10,25 @@
 
 
 .promo__wrapper {
-  padding-top: 27px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+
 
   @media (min-width: $desktop-width) {
     &::before {
       position: absolute;
       content: "";
       top: 0;
-      left: 50%;
+      left: 75%;
+      transform: translateX(-50%);
       width: 50%;
       height: 694px;
       background-image: url("../img/cat-background-desktop.jpg");
       background-color: var(--basic-color-light);
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: right;
+      background-position: top right;
       display: block;
       z-index: -1;
     }
@@ -41,6 +42,7 @@
 
 .promo__background-wrapper {
   position: relative;
+  padding-top: 27px;
   height: 302px;
 
   @media (min-width: $tablet-width) {
@@ -76,6 +78,8 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .promo__text {
@@ -92,7 +96,8 @@
 }
 
 .promo__image {
-  display: block;
+  position: relative;
+  bottom: 130px;
 
   @media (min-width: $tablet-width) {
     align-self: center;

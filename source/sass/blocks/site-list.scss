@@ -22,7 +22,9 @@
   text-decoration: none;
   color: var(--main-color-dark);
 
-  @media (min-width: $desktop-width) {
-    color: var(--main-color);
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      color: var(--main-color);
+    }
   }
 }
