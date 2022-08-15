@@ -1,21 +1,30 @@
 .catalog-page {
   font-family: var(--second-font);
-}
-
-.catalog-page__title {
-  margin: 0;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 38px;
-    font-size: 60px;
-    line-height: 60px;
+    padding-top: 40px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 30px;
+  }
+}
+
+.catalog-page__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 163px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 165px;
   }
 }

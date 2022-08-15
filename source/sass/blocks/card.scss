@@ -12,12 +12,42 @@
 
 .card__link {
   text-decoration: none;
+  max-width: 76px;
+}
+
+.card__link-image {
+  text-decoration: none;
 }
 
 .card__title {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
+  margin-bottom: 14px;
   color: var(--special-deep-color-dark);
   text-transform: uppercase;
+}
+
+.card__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.card__wrapper-image {
+  padding: 11px 28px 0;
+
+  &--small {
+    padding: 14px 36px 3px;
+  }
+}
+
+.card__image {
+  display: block;
+}
+
+.card__wrapper-information {
+  display: flex;
+  flex-direction: column;
 }

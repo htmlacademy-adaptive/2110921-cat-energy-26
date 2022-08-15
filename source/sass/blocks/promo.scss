@@ -28,7 +28,7 @@
       left: 50%;
       width: 50%;
       height: 694px;
-      background-image: url("../img/cat-background-desktop.jpg");
+      background-image: url("../img/cat-background-promo-desktop.jpg");
       background-color: var(--basic-color-light);
       background-repeat: no-repeat;
       background-size: cover;
@@ -57,7 +57,7 @@
   content: "";
   position: absolute;
   background-color: var(--basic-color-light);
-  background-image: url("../img/cat-background-main.jpg");
+  background-image: url("../img/cat-background-promo-main.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--main-color);
@@ -108,6 +108,11 @@
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    bottom: 268px;
+  }
 }
 
 .promo__image {

@@ -3,13 +3,17 @@
     display: grid;
     grid-template-columns: 316px 316px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 324px 288px;
+    align-items: center;
+  }
 }
 
 .extra-product {
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 651px 244px;
   }
 }
 
@@ -20,6 +24,18 @@
   line-height: 16px;
   color: var(--special-deep-color-dark);
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .extra-product__price {
@@ -27,4 +43,16 @@
   font-size: 14px;
   line-height: 14px;
   color: var(--special-deep-color-medium);
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
