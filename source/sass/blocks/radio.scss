@@ -1,4 +1,28 @@
 .radio__label {
   color: var(--special-deep-color-dark);
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 }
+
+
+.radio__mark-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--special-deep-color-light);
+  margin-right: 15px;
+}
+
+.radio__control[type="radio"]:checked + .radio__mark-control::before {
+  display: block;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--basic-color);
+}
+

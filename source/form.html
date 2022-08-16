@@ -39,13 +39,13 @@
   <main class="main-container form-page">
     <header class="form-page__header container">
       <h1 class="form-page__title">Подбор программы</h1>
-      <p class="form-page__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="form-page__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
     </header>
     <section class="questionary">
       <h2 class="visually-hidden">Анкета</h2>
       <form class="questionary__form form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__wrapper container">
-          <fieldset class="form__field container">
+          <fieldset class="form__field">
             <legend class="visually-hidden">Расскажите про кота</legend>
             <div class="form__field-wrapper">
               <label class="form__field-label" for="name">Имя:*</label>
@@ -64,17 +64,24 @@
             <legend class="visually-hidden">Цель</legend>
             <ul class="goal__list">
               <li class="goal__item radio">
-                <input class="radio__control" type="radio" name="main-goal" id="weight-loss" value="weight-loss"
-                  checked>
-                <label class="radio__label" for="weight-loss">Похудение</label>
+                <label class="radio__label" for="weight-loss">
+                  <input class="visually-hidden radio__control" type="radio" name="main-goal" id="weight-loss"
+                    value="weight-loss" checked>
+                  <span class="radio__mark-control"></span>
+                  Похудение</label>
               </li>
               <li class="goal__item radio">
-                <input class="radio__control" type="radio" name="main-goal" id="weight-gain" value="weight-gain">
-                <label class="radio__label" for="weight-gain">Набор массы</label>
+                <label class="radio__label" for="weight-gain">
+                  <input class="visually-hidden radio__control" type="radio" name="main-goal" id="weight-gain"
+                    value="weight-gain">
+                  <span class="radio__mark-control"></span>
+                  Набор массы</label>
               </li>
               <li class="goal__item radio">
-                <input class="radio__control" type="radio" name="main-goal" id="help" value="help">
-                <label class="radio__label" for="help">Не знаю (нужен ваш совет)</label>
+                <label class="radio__label" for="help">
+                  <input class="visually-hidden radio__control" type="radio" name="main-goal" id="help" value="help">
+                  <span class="radio__mark-control"></span>
+                  Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>

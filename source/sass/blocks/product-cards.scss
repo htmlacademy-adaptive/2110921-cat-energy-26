@@ -19,5 +19,13 @@
 }
 
 .product-cards__item {
-  padding: 19px 0 25px;
+  padding: 8px 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 36px 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 30px 40px 35px;
+  }
 }

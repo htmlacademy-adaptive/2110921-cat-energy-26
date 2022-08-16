@@ -1,5 +1,7 @@
 
 .form__wrapper {
+  padding-bottom: 26px;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 570px);
@@ -10,11 +12,14 @@
 .form__field {
   border: none;
   padding: 0;
+  padding-bottom: 24px;
 }
 
 .form__field-label {
   color: var(--special-deep-color-medium);
   text-transform: uppercase;
+  display: block;
+  margin-right: 12px;
 }
 
 .form__field-value {
@@ -22,6 +27,9 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  padding: 13px 10px 14px 15px;
+  border: 1px solid var(--special-deep-color-clear);
+  flex-grow: 1;
 
   &::placeholder {
     color: var(--special-deep-color-medium);
@@ -79,5 +87,16 @@
     display: grid;
     grid-template-columns: 568px 180px;
     column-gap: 80px;
+  }
+}
+
+.form__field-wrapper {
+  display: flex;
+  min-width: 280px;
+  align-items: center;
+  margin-top: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }

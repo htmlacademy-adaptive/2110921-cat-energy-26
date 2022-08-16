@@ -2,6 +2,15 @@
   font-family: var(--second-font);
   font-size: 16px;
   line-height: 18px;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 19px;
+  }
 }
 
 
@@ -10,19 +19,28 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 60px;
-    line-height: 60px;
+    margin-bottom: 56px;
   }
 }
 
 .form-page__text {
   font-size: 14px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
 }
