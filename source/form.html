@@ -41,7 +41,7 @@
       <h1 class="form-page__title">Подбор программы</h1>
       <p class="form-page__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
     </header>
-    <section class="questionary">
+    <section class="questionary container">
       <h2 class="visually-hidden">Анкета</h2>
       <form class="questionary__form form" action="https://echo.htmlacademy.ru" method="post">
         <div class="form__wrapper container">
@@ -60,7 +60,7 @@
               <input class="form__field-value" type="number" name="age" id="age" placeholder="7">
             </div>
           </fieldset>
-          <fieldset class="form__field goal container">
+          <fieldset class="form__field form__field--bordered goal container">
             <legend class="visually-hidden">Цель</legend>
             <ul class="goal__list">
               <li class="goal__item radio">
@@ -88,14 +88,16 @@
         </div>
         <fieldset class="form__field container">
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
-          <div class="form__field-wrapper">
-            <label class="form__field-label" for="email">E-mail:*</label>
-            <input class="form__field-value" type="email" name="email" id="email" placeholder="kuklachev@gmail.com"
-              required>
-          </div>
-          <div class="form__field-wrapper">
-            <label class="form__field-label" for="tel">Телефон:*</label>
-            <input class="form__field-value" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+          <div class="form__fields-wrapper">
+            <div class="form__field-wrapper">
+              <label class="form__field-label" for="email">E-mail:*</label>
+              <input class="form__field-value" type="email" name="email" id="email" placeholder="kuklachev@gmail.com"
+                required>
+            </div>
+            <div class="form__field-wrapper">
+              <label class="form__field-label" for="tel">Телефон:*</label>
+              <input class="form__field-value" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90" required>
+            </div>
           </div>
         </fieldset>
         <fieldset class="form__field container">
@@ -103,24 +105,33 @@
           <textarea class="form__text" name="comments" rows="10"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="form__field container">
-          <legend class="form__legend">Дополнительно</legend>
-          <ul class="form__list">
-            <li class="form__item checkbox">
-              <input class="checkbox__control" type="checkbox" name="sweetener" id="sweetener" checked>
-              <label class="checkbox__label" for="sweetener">Cахарозаменитель</label>
+        <fieldset class="form__field additionally container">
+          <legend class="form__legend additionally__legend">Дополнительно</legend>
+          <ul class="additionally__list">
+            <li class="additionally__item checkbox">
+              <label class="checkbox__label" for="sweetener">
+                <input class="visually-hidden checkbox__control" type="checkbox" name="sweetener" id="sweetener"
+                  checked>
+                <span class="checkbox__mark-control"></span>
+                Cахарозаменитель</label>
             </li>
-            <li class="form__item checkbox">
-              <input class="checkbox__control" type="checkbox" name="water" id="water">
-              <label class="checkbox__label" for="water">Питьевая вода </label>
+            <li class="additionally__item checkbox">
+              <label class="checkbox__label" for="water">
+                <input class="visually-hidden checkbox__control" type="checkbox" name="water" id="water">
+                <span class="checkbox__mark-control"></span>
+                Питьевая вода </label>
             </li>
-            <li class="form__item checkbox">
-              <input class="checkbox__control" type="checkbox" name="milk" id="milk">
-              <label class="checkbox__label" for="milk">Молоко</label>
+            <li class="additionally__item checkbox">
+              <label class="checkbox__label" for="milk">
+                <input class="visually-hidden checkbox__control" type="checkbox" name="milk" id="milk">
+                <span class="checkbox__mark-control"></span>
+                Молоко</label>
             </li>
-            <li class="form__item checkbox">
-              <input class="checkbox__control" type="checkbox" name="vitamins" id="vitamins">
-              <label class="checkbox__label" for="vitamins">Витамины</label>
+            <li class="additionally__item checkbox">
+              <label class="checkbox__label" for="vitamins">
+                <input class="visually-hidden checkbox__control" type="checkbox" name="vitamins" id="vitamins">
+                <span class="checkbox__mark-control"></span>
+                Витамины</label>
             </li>
           </ul>
         </fieldset>

@@ -2,17 +2,21 @@
   font-family: var(--second-font);
   font-size: 16px;
   line-height: 18px;
-  padding-top: 27px;
+}
+
+
+.form-page__header {
+  display: block;
+  padding: 27px 0 39px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 39px;
+    padding: 39px 39px 66px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 19px;
+    padding: 19px 0 66px;
   }
 }
-
 
 .form-page__title {
   font-weight: 400;
@@ -36,11 +40,9 @@
   font-size: 14px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 66px;
   }
 }
