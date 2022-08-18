@@ -4,16 +4,6 @@
   list-style-type: none;
 }
 
-.goal {
-  @media (min-width: $tablet-width) {
-    width: 630px;
-    box-sizing: border-box;
-    border: 1px solid var(--special-deep-color-grey);
-    padding: 25px 28px;
-    margin-top: 72px;
-  }
-}
-
 .goal__item {
   margin-bottom: 12px;
 
