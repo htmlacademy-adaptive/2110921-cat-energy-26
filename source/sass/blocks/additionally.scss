@@ -6,7 +6,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 124px;
+    gap: 32px 124px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,6 +20,10 @@
   margin-bottom: 12px;
 
   &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
 }
