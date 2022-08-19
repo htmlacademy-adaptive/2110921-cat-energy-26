@@ -6,7 +6,7 @@
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 37px 65px 41px;
+    padding: 0 37px 65px 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,6 +16,11 @@
   }
 }
 
+.form__wrapper-additionally {
+  @media (min-width: $tablet-width) {
+    padding: 0 37px 54px 40px;
+  }
+}
 
 .form__field {
   border: none;
@@ -67,8 +72,8 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 76px;
-    padding-left: 39px;
+    margin-bottom: 65px;
+    padding: 0 39px;
   }
 }
 
@@ -100,7 +105,7 @@
 .form__button-wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
+  // padding-top: 10px;
 
   @media (min-width: $tablet-width) {
     display: grid;

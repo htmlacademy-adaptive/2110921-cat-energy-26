@@ -102,38 +102,42 @@
         </fieldset>
         <fieldset class="form__field container">
           <legend class="form__legend">Комментарий</legend>
-          <textarea class="form__text" name="comments" rows="10"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
+          <div class="form__wrapper">
+            <textarea class="form__text" name="comments" rows="10"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
         </fieldset>
         <fieldset class="form__field additionally container">
-          <legend class="form__legend additionally__legend">Дополнительно</legend>
-          <ul class="additionally__list">
-            <li class="additionally__item checkbox">
-              <label class="checkbox__label" for="sweetener">
-                <input class="visually-hidden checkbox__control" type="checkbox" name="sweetener" id="sweetener"
-                  checked>
-                <span class="checkbox__mark-control"></span>
-                Cахарозаменитель</label>
-            </li>
-            <li class="additionally__item checkbox">
-              <label class="checkbox__label" for="water">
-                <input class="visually-hidden checkbox__control" type="checkbox" name="water" id="water">
-                <span class="checkbox__mark-control"></span>
-                Питьевая вода </label>
-            </li>
-            <li class="additionally__item checkbox">
-              <label class="checkbox__label" for="milk">
-                <input class="visually-hidden checkbox__control" type="checkbox" name="milk" id="milk">
-                <span class="checkbox__mark-control"></span>
-                Молоко</label>
-            </li>
-            <li class="additionally__item checkbox">
-              <label class="checkbox__label" for="vitamins">
-                <input class="visually-hidden checkbox__control" type="checkbox" name="vitamins" id="vitamins">
-                <span class="checkbox__mark-control"></span>
-                Витамины</label>
-            </li>
-          </ul>
+          <legend class="form__legend">Дополнительно</legend>
+          <div class="form__wrapper-additionally">
+            <ul class="additionally__list">
+              <li class="additionally__item checkbox">
+                <label class="checkbox__label" for="sweetener">
+                  <input class="visually-hidden checkbox__control" type="checkbox" name="sweetener" id="sweetener"
+                    checked>
+                  <span class="checkbox__mark-control"></span>
+                  Cахарозаменитель</label>
+              </li>
+              <li class="additionally__item checkbox">
+                <label class="checkbox__label" for="water">
+                  <input class="visually-hidden checkbox__control" type="checkbox" name="water" id="water">
+                  <span class="checkbox__mark-control"></span>
+                  Питьевая вода </label>
+              </li>
+              <li class="additionally__item checkbox">
+                <label class="checkbox__label" for="milk">
+                  <input class="visually-hidden checkbox__control" type="checkbox" name="milk" id="milk">
+                  <span class="checkbox__mark-control"></span>
+                  Молоко</label>
+              </li>
+              <li class="additionally__item checkbox">
+                <label class="checkbox__label" for="vitamins">
+                  <input class="visually-hidden checkbox__control" type="checkbox" name="vitamins" id="vitamins">
+                  <span class="checkbox__mark-control"></span>
+                  Витамины</label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
         <div class="form__button-wrapper container">
           <button class="form__button button" type="submit">Отправить заявку</button>
