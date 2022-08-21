@@ -16,6 +16,12 @@
   border-radius: 50%;
   border: 1px solid var(--special-deep-color-light);
   margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .radio__control[type="radio"]:checked + .radio__mark-control::before {
@@ -25,5 +31,10 @@
   height: 14px;
   border-radius: 50%;
   background-color: var(--basic-color);
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
