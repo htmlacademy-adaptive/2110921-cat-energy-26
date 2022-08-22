@@ -22,6 +22,7 @@
   @media (min-width: $tablet-width) {
     min-width: 250px;
     padding: 7px 0 9px;
+    border-bottom: 1px solid var(--special-deep-color-light);
   }
 
   @media (min-width: $desktop-width) {
