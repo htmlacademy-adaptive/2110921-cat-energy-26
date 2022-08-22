@@ -19,10 +19,16 @@
 }
 
 .product-cards__item {
-  padding: 8px 0 25px;
+  padding: 19px 0 25px;
+  border-top: 1px solid var(--special-deep-color-grey-bright);
+
+  &:last-child {
+    border-bottom: 1px solid var(--special-deep-color-grey-bright);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0 36px 39px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {

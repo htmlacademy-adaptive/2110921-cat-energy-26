@@ -44,7 +44,7 @@
     <section class="questionary">
       <h2 class="visually-hidden">Анкета</h2>
       <form class="questionary__form form container" action="https://echo.htmlacademy.ru" method="post">
-        <div class="form__wrapper">
+        <div class="form__wrapper form__wrapper--grid">
           <fieldset class="form__field">
             <legend class="visually-hidden">Расскажите про кота</legend>
             <div class="form__field-wrapper">
@@ -88,7 +88,7 @@
         </div>
         <fieldset class="form__field container">
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
-          <div class="form__wrapper">
+          <div class="form__wrapper form__wrapper--grid">
             <div class="form__field-wrapper">
               <label class="form__field-label" for="email">E-mail:*</label>
               <input class="form__field-value" type="email" name="email" id="email" placeholder="kuklachev@gmail.com"
@@ -102,14 +102,14 @@
         </fieldset>
         <fieldset class="form__field container">
           <legend class="form__legend">Комментарий</legend>
-          <div class="form__wrapper-textarea">
+          <div class="form__wrapper">
             <textarea class="form__text" name="comments" rows="10"
               placeholder="Расскажите обо всех повадках кота"></textarea>
-          </div>>
+          </div>
         </fieldset>
         <fieldset class="form__field additionally container">
           <legend class="form__legend">Дополнительно</legend>
-          <div class="form__wrapper-additionally">
+          <div class="form__wrapper">
             <ul class="additionally__list">
               <li class="additionally__item checkbox">
                 <label class="checkbox__label" for="sweetener">
