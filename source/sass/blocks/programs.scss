@@ -17,7 +17,30 @@
 }
 
 .programs__item {
+  position: relative;
   background-color: var(--special-light-color);
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+
+  &--slim::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 53px;
+    background-image: url("../img/cat-program-slim.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--pro::before {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 50px;
+    left: 13px;
+    background-image: url("../img/cat-program-pro.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .programs__title {
@@ -25,6 +48,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
+  margin: 6px 0 22px 71px;
   text-transform: uppercase;
 }
 
@@ -32,6 +56,22 @@
   font-size: 14px;
   line-height: 18px;
   color: var(--special-deep-color-medium);
+  margin: 0;
+  margin-bottom: 42px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 1px;
+    background-color: var(--special-deep-color-grey);
+    top: 113px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .programs__link {

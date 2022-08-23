@@ -15,12 +15,16 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .example__description {
   font-size: 14px;
   line-height: 18px;
   color: var(--special-deep-color-medium);
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .example__list {
@@ -111,6 +115,8 @@
 }
 
 .example__wrapper {
+  padding: 25px 0 40px 0;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 436px 560px;
