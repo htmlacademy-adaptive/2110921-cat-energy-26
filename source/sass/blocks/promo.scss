@@ -16,11 +16,15 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     align-items: flex-start;
+    padding-bottom: 0;
   }
 
 
   @media (min-width: $desktop-width) {
+    position: static;
+
     &::before {
       position: absolute;
       content: "";
@@ -110,13 +114,18 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    position: relative;
-    bottom: 268px;
+    position: absolute;
+    bottom: 229px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
 .promo__image {
+  margin-bottom: 3px;
+
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     align-self: center;
   }
 }
