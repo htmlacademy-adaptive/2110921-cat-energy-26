@@ -7,14 +7,20 @@
   text-transform: uppercase;
   font-weight: 500;
   font-size: 20px;
-  line-height: 20px;
+  line-height: 1;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     min-width: 442px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 480px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -22,9 +28,23 @@
   text-decoration: none;
   color: var(--main-color-dark);
 
+  @media (min-width: $tablet-width) {
+    padding: 8px 0;
+  }
+
   &--desktop {
     @media (min-width: $desktop-width) {
       color: var(--main-color);
     }
+  }
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid var(--basic-color);
+    }
+
+    // @media (min-width: $desktop-width) {
+    //   border-bottom: 2px solid var(--main-color);
+    // }
   }
 }

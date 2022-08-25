@@ -21,9 +21,9 @@
     padding-bottom: 0;
   }
 
-
   @media (min-width: $desktop-width) {
     position: static;
+    padding-bottom: 267px;
 
     &::before {
       position: absolute;
@@ -40,20 +40,22 @@
       display: block;
       z-index: -1;
     }
-
-    height: 694px; //нужно будет убрать
   }
 }
 
 
 .promo__background-wrapper {
   position: relative;
-  padding-top: 27px;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 58px;
   }
 }
 
@@ -119,6 +121,11 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    bottom: 0;
+  }
 }
 
 .promo__image {
@@ -127,5 +134,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 141px;
   }
 }
