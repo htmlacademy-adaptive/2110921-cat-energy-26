@@ -42,9 +42,11 @@
     @media (min-width: $tablet-width) {
       border-bottom: 2px solid var(--basic-color);
     }
+  }
 
-    // @media (min-width: $desktop-width) {
-    //   border-bottom: 2px solid var(--main-color);
-    // }
+  &--active-desktop {
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid var(--main-color);
+    }
   }
 }

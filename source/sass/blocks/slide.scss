@@ -8,6 +8,9 @@
 }
 
 .slide__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 50%;
   right: -18px;
@@ -19,6 +22,14 @@
   padding: 0;
   box-sizing: border-box;
   cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 18px;
+    background-image: url("../img/slider-arrows.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .slide {
