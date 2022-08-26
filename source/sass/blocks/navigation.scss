@@ -36,6 +36,30 @@
   opacity: 0.3;
 }
 
+.navigation--opened .navigation__toggle {
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: var(--main-color-dark);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
 .navigation__wrapper {
   display: none;
 
