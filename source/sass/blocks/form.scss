@@ -31,6 +31,11 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 67px;
+
+    &--grid {
+      display: grid;
+      grid-row-gap: 20px;
+    }
   }
 }
 
@@ -77,7 +82,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
-    line-height: 36px;
+    line-height: 1;
     margin-bottom: 65px;
     padding: 0 39px;
   }
@@ -159,6 +164,10 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 

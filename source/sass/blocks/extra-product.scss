@@ -21,7 +21,7 @@
   font-family: var(--second-font);
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   color: var(--special-deep-color-dark);
   text-transform: uppercase;
   margin: 0;
@@ -29,7 +29,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 1;
     margin-bottom: 25px;
   }
 
@@ -41,7 +41,7 @@
 .extra-product__price {
   font-family: var(--main-font);
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   color: var(--special-deep-color-medium);
   margin: 0;
   margin-bottom: 15px;

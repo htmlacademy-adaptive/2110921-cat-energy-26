@@ -11,8 +11,26 @@
   border: none;
   text-decoration: none;
 
+  &:hover {
+    background-color: var(--basic-color-dark);
+  }
+
+  &:active {
+    background-color: var(--basic-color-dark);
+    color: var(--main-color-opacity);
+  }
+
   &--show {
     background-color: var(--special-light-color);
     color: var(--special-deep-color-medium);
+
+    &:hover {
+      background-color: var(--special-deep-color-grey-bright);
+    }
+
+    &:active {
+      background-color: var(--special-deep-color-grey-bright);
+      color: var(--special-deep-color-medium-opacity);
+    }
   }
 }

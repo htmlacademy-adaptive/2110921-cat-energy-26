@@ -84,27 +84,27 @@
 .promo__title {
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   margin: 0;
   margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    line-height: 60px;
+    line-height: 1;
     margin-bottom: 40px;
   }
 }
 
 .promo__text {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 1;
     margin-bottom: 50px;
   }
 }
@@ -119,7 +119,7 @@
     position: absolute;
     bottom: 229px;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 1;
   }
 
   @media (min-width: $desktop-width) {

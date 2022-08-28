@@ -26,13 +26,12 @@
 .form-page__title {
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   margin: 0;
   margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    line-height: 60px;
     margin-bottom: 54px;
     margin-left: 39px;
   }

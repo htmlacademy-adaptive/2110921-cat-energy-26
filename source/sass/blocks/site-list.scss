@@ -39,7 +39,11 @@
     border: none;
 
     &:hover {
-      color: rgba(0, 0, 0, 0.3);
+      color: var(--main-color-dark-opacity-1);
+    }
+
+    &:active {
+      color: var(--main-color-dark-opacity-2);
     }
   }
 
@@ -51,6 +55,14 @@
   &--desktop {
     @media (min-width: $desktop-width) {
       color: var(--main-color);
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+      }
     }
   }
 
