@@ -35,7 +35,7 @@
   @media (min-width: $tablet-width) {
     padding: 8px 0;
     font-size: 18px;
-    line-height: 24px;
+    line-height: math.div(24, 18);
     border: none;
 
     &:hover {
@@ -49,7 +49,7 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
-    line-height: 30px;
+    line-height: math.div(30, 20);
   }
 
   &--desktop {

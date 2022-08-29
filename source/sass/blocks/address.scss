@@ -39,7 +39,7 @@
   font-family: var(--second-font);
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: math.div(20, 16);
   color: var(--special-deep-color);
   text-transform: uppercase;
   width: 140px;
@@ -47,13 +47,13 @@
   @media (min-width: $tablet-width) {
     width: 172px;
     font-size: 20px;
-    line-height: 26px;
+    line-height: math.div(26, 20);
   }
 }
 
 .address__text {
   font-size: 14px;
-  line-height: 20px;
+  line-height: math.div(20, 14);
   margin: 0;
   color: var(--special-deep-color-medium);
   width: 140px;
@@ -61,6 +61,7 @@
   @media (min-width: $tablet-width) {
     width: 160px;
     font-size: 16px;
+    line-height: math.div(20, 16);
     text-align: right;
   }
 }

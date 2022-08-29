@@ -14,7 +14,7 @@
   font-family: var(--second-font);
   font-weight: 400;
   font-size: 36px;
-  line-height: 40px;
+  line-height: math.div(40, 36);
   margin: 0;
   margin-bottom: 40px;
 
@@ -31,14 +31,14 @@
 
 .example__description {
   font-size: 14px;
-  line-height: 18px;
+  line-height: math.div(18, 14);
   color: var(--special-deep-color-medium);
   margin: 0;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    line-height: 24px;
+    line-height: math.div(24, 16);
     margin-bottom: 54px;
   }
 
@@ -83,7 +83,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    line-height: 37px;
+    line-height: math.div(37, 30);
   }
 }
 
@@ -124,7 +124,7 @@
   font-family: var(--second-font);
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
+  line-height: math.div(20, 14);
   text-transform: uppercase;
   text-align: center;
   margin: 0 0 20px 0;
@@ -134,6 +134,7 @@
     flex-direction: column;
     align-items: flex-end;
     font-size: 20px;
+    line-height: 1;
     margin: 0;
     margin-top: 11px;
   }

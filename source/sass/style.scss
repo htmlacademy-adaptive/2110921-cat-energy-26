@@ -1,3 +1,5 @@
+//stylelint-disable
+@use "sass:math";
 @import "variables.scss";
 @import "fonts.scss";
 @import "global.scss";
@@ -35,3 +37,4 @@
 @import "./blocks/extra-product.scss";
 @import "./blocks/price.scss";
 @import "./blocks/special-offer.scss";
+//stylelint-enable
