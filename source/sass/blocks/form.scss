@@ -60,14 +60,30 @@
   line-height: math.div(18, 16);
   text-transform: uppercase;
   appearance: none;
-  padding: 13px 10px 14px 15px;
+  padding: 12px 10px 13px 15px;
   border: 1px solid var(--special-deep-color-clear);
   flex-grow: 1;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: math.div(30, 20);
-    padding: 11px 19px;
+    padding: 10px 19px;
+  }
+
+  &:hover {
+    border: 1px solid var(--special-deep-color-light);
+  }
+
+  &:focus,
+  &:focus:not(:placeholder-shown) {
+    border: 1px solid var(--special-deep-color-medium);
+    box-shadow: inset 0 0 0 1px var(--special-deep-color-medium);
+    outline: none;
+  }
+
+  &--error {
+    border: 1px solid var(--error-color);
   }
 
   &::placeholder {
