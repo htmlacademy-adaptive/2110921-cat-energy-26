@@ -22,7 +22,7 @@
 .site-list__link {
   text-decoration: none;
   color: var(--main-color-dark);
-  // position: relative;
+  position: relative;
   display: block;
   text-align: center;
   padding: 23px 70px;
@@ -75,11 +75,5 @@
     @media (min-width: $desktop-width) {
       border-bottom: 2px solid var(--main-color);
     }
-  }
-}
-
-.navigation--closed .site-list__item {
-  @media (max-width: $mobile-width-only) {
-    display: none;
   }
 }

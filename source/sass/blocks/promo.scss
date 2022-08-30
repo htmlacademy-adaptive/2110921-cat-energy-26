@@ -9,7 +9,6 @@
   }
 }
 
-
 .promo__wrapper {
   padding-bottom: 20px;
   display: flex;
@@ -113,13 +112,15 @@
   font-size: 14px;
   line-height: math.div(18, 14);
   text-transform: uppercase;
-  text-decoration: none;
+  padding-top: 11px;
+  padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 229px;
+    bottom: 220px;
     font-size: 20px;
     line-height: 1;
+    padding: 16px 27px;
   }
 
   @media (min-width: $desktop-width) {
