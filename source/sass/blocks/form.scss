@@ -25,6 +25,7 @@
   padding-bottom: 24px;
   width: 100%;
 
+
   @media (min-width: $tablet-width) {
     padding-bottom: 65px;
   }
@@ -92,15 +93,37 @@
 }
 
 .form__legend {
+  display: inline-block;
+  position: relative;
   font-size: 24px;
   line-height: math.div(26, 24);
   margin-bottom: 35px;
+  margin-left: -19px;
+  background-color: var(--main-color);
+  padding: 0 20px 0 19px;
+  max-width: 202px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    background-color: var(--basic-color);
+    z-index: -1;
+    width: 100vw;
+
+    @media (min-width: $tablet-width) {
+      margin-left: calc(50% - 50vw);
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 1;
+    margin: 0;
     margin-bottom: 65px;
     padding: 0 39px;
+    max-width: 515px;
   }
 
   @media (min-width: $desktop-width) {

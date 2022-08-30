@@ -13,6 +13,29 @@
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  padding-top: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: var(--basic-color-light);
+    background-image: url("../img/cat-background-promo-main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--main-color);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 100vw;
+    height: 302px;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -28,7 +51,7 @@
       position: absolute;
       content: "";
       top: 0;
-      left: 50%;
+      left: 75%;
       width: 50%;
       height: 694px;
       background-image: url("../img/cat-background-promo-desktop.jpg");
@@ -39,43 +62,6 @@
       display: block;
       z-index: -1;
     }
-  }
-}
-
-
-.promo__background-wrapper {
-  position: relative;
-  padding-top: 40px;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 58px;
-  }
-}
-
-.promo__background-wrapper::before {
-  content: "";
-  position: absolute;
-  background-color: var(--basic-color-light);
-  background-image: url("../img/cat-background-promo-main.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: var(--main-color);
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
-  width: 100vw;
-  height: 302px;
-  z-index: -1;
-
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }
 

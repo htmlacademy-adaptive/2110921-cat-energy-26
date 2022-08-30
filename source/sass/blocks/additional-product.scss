@@ -35,9 +35,13 @@
     position: absolute;
     top: 50%;
     height: 2px;
-    width: 100%;
     background-color: var(--basic-color);
     z-index: -1;
+    width: 100vw;
+
+    @media (min-width: $tablet-width) {
+      margin-left: calc(50% - 50vw);
+    }
   }
 }
 
