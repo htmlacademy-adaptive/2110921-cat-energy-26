@@ -1,14 +1,37 @@
+.advantages__wrapper {
+  padding: 20px 0 49px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 47px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 0 69px 0;
+  }
+}
+
 .advantages__title {
   font-family: var(--second-font);
   font-weight: 400;
   font-size: 36px;
-  line-height: 40px;
+  line-height: math.div(40, 36);
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 32px;
+  }
 }
 
 .advantages__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  counter-reset: advantages-counter;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -19,13 +42,107 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 94px;
+    column-gap: 82px;
   }
 }
 
+.advantages__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 20px;
+  counter-increment: advantages-counter;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    padding: 40px 0 57px 0;
+    margin-bottom: 0;
+
+    &::after {
+      font-family: var(--second-font);
+      width: 136px;
+      content: counter(advantages-counter);
+      position: absolute;
+      font-size: 280px;
+      color: var(--special-light-color);
+      z-index: -1;
+      bottom: -70px;
+      left: 115px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0;
+    background-color: var(--basic-color);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.advantages__item--healthy {
+  @media (min-width: $tablet-width) {
+    width: 230px;
+  }
+}
+
+.advantages__item--healthy::before {
+  background-image: url("../img/icon-leaf.svg");
+}
+
+.advantages__item--cooking {
+  @media (min-width: $tablet-width) {
+    width: 246px;
+  }
+}
+
+.advantages__item--cooking::before {
+  background-image: url("../img/icon-glass.svg");
+}
+
+.advantages__item--nutrition {
+  @media (min-width: $tablet-width) {
+    width: 247px;
+  }
+}
+
+.advantages__item--nutrition::before {
+  background-image: url("../img/icon-eat.svg");
+}
+
+.advantages__item--effect {
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+}
+
+.advantages__item--effect::before {
+  background-image: url("../img/icon-clock.svg");
+}
 
 .advantages__description {
   font-size: 14px;
-  line-height: 18px;
+  line-height: math.div(18, 14);
   color: var(--special-deep-color-medium);
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: math.div(24, 16);
+    position: inherit;
+    padding-top: 111px;
+  }
 }

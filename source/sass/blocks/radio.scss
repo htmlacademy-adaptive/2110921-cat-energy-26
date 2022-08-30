@@ -1,4 +1,39 @@
 .radio__label {
   color: var(--special-deep-color-dark);
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+
+.radio__mark-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--special-deep-color-light);
+  margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.radio__control[type="radio"]:checked + .radio__mark-control::before {
+  display: block;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--basic-color);
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }

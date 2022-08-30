@@ -1,27 +1,91 @@
 
 .form__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 37px 0 40px;
+  }
+
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(2, 570px);
-    column-gap: 80px;
+    padding: 0;
+  }
+
+  &--grid {
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 570px);
+      column-gap: 80px;
+    }
   }
 }
 
+
 .form__field {
   border: none;
+  margin: 0;
   padding: 0;
+  padding-bottom: 24px;
+  width: 100%;
+
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 67px;
+
+    &--grid {
+      display: grid;
+      grid-row-gap: 20px;
+    }
+  }
 }
 
 .form__field-label {
   color: var(--special-deep-color-medium);
   text-transform: uppercase;
+  display: block;
+  margin-right: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 14px;
+  }
 }
 
 .form__field-value {
   font-family: inherit;
   font-size: 16px;
-  line-height: 18px;
+  line-height: math.div(18, 16);
   text-transform: uppercase;
+  appearance: none;
+  padding: 12px 10px 13px 15px;
+  border: 1px solid var(--special-deep-color-clear);
+  flex-grow: 1;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: math.div(30, 20);
+    padding: 10px 19px;
+  }
+
+  &:hover {
+    border: 1px solid var(--special-deep-color-light);
+  }
+
+  &:focus,
+  &:focus:not(:placeholder-shown) {
+    border: 1px solid var(--special-deep-color-medium);
+    box-shadow: inset 0 0 0 1px var(--special-deep-color-medium);
+    outline: none;
+  }
+
+  &--error {
+    border: 1px solid var(--error-color);
+  }
 
   &::placeholder {
     color: var(--special-deep-color-medium);
@@ -29,55 +93,122 @@
 }
 
 .form__legend {
+  display: inline-block;
+  position: relative;
   font-size: 24px;
-  line-height: 26px;
+  line-height: math.div(26, 24);
+  margin-bottom: 35px;
+  margin-left: -19px;
+  background-color: var(--main-color);
+  padding: 0 20px 0 19px;
+  max-width: 202px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    background-color: var(--basic-color);
+    z-index: -1;
+    width: 100vw;
+
+    @media (min-width: $tablet-width) {
+      margin-left: calc(50% - 50vw);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 65px;
+    padding: 0 39px;
+    max-width: 515px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -39px;
+  }
 }
 
 .form__text {
   font-family: inherit;
   font-size: 16px;
-  line-height: 18px;
+  line-height: math.div(18, 16);
   text-transform: uppercase;
+  min-height: 150px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--special-deep-color-clear);
 
   &::placeholder {
     color: var(--special-deep-color-medium);
   }
-}
-
-.form__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 124px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 104px;
+    font-size: 20px;
+    line-height: math.div(30, 20);
+    padding: 10px 19px;
   }
 }
+
 
 .form__legend-fields {
   font-family: var(--main-font);
   font-size: 14px;
-  line-height: 16px;
+  line-height: math.div(16, 14);
+  align-self: center;
+  margin: 21px 0 32px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.form__button {
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+    padding: 16px 44px;
+  }
 }
 
 .form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 282px auto;
     column-gap: 60px;
+    padding: 0 37px 65px 40px;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
     grid-template-columns: 568px 180px;
     column-gap: 80px;
+    padding: 0;
+    padding-bottom: 82px;
+  }
+}
+
+.form__field-wrapper {
+  display: flex;
+  min-width: 280px;
+  align-items: center;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }

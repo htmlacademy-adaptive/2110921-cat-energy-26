@@ -1,9 +1,135 @@
+
+
 .navigation__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+.navigation__wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    padding: 24px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 0;
+  }
+}
+
+
 .navigation__toggle {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 18px;
+  border: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-bottom: 18px;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+
+.navigation--closed .navigation__toggle::before {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 18px;
+  background-image: url("../img/burger-menu.svg");
+}
+
+.navigation--closed .navigation__toggle:active::before {
+  opacity: 0.3;
+}
+
+.navigation--closed .site-list {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.navigation--opened .navigation__toggle {
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 2px;
+    background-color: var(--main-color-dark);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
+}
+
+.navigation--opened .site-list {
+  background-color: var(--main-color);
+  position: absolute;
+  top: 66px;
+  z-index: 2;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.navigation--nojs .navigation__toggle {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.navigation--nojs .site-list {
+  @media (max-width: $mobile-width-only) {
+    position: static;
+    display: block;
+    min-height: 0;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+}
+
+.navigation--nojs .site-list__item {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
+}
+
+
+.navigation__logo {
+  height: 38px;
+  margin-bottom: 18px;
+
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 59px;
+  }
 }

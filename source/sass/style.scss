@@ -1,29 +1,33 @@
+//stylelint-disable
+@use "sass:math";
 @import "variables.scss";
 @import "fonts.scss";
-@import "visually-hidden.scss";
 @import "global.scss";
 @import "container.scss";
 // blocks
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/button.scss";
+@import "./blocks/form.scss";
+@import "./blocks/radio.scss";
+@import "./blocks/checkbox.scss";
 @import "./blocks/page.scss";
 @import "./blocks/header.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/navigation.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/promo.scss";
-@import "./blocks/button.scss";
 @import "./blocks/programs.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/example.scss";
 @import "./blocks/slide.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/address.scss";
+@import "./blocks/map.scss";
 @import "./blocks/social.scss";
 @import "./blocks/copyright.scss";
 @import "./blocks/form-page.scss";
-@import "./blocks/form.scss";
 @import "./blocks/goal.scss";
-@import "./blocks/radio.scss";
-@import "./blocks/checkbox.scss";
+@import "./blocks/additionally.scss";
 @import "./blocks/catalog-page.scss";
 @import "./blocks/product-cards.scss";
 @import "./blocks/card.scss";
@@ -33,3 +37,4 @@
 @import "./blocks/extra-product.scss";
 @import "./blocks/price.scss";
 @import "./blocks/special-offer.scss";
+//stylelint-enable

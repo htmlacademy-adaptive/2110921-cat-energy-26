@@ -1,4 +1,26 @@
 .checkbox__label {
   color: var(--main-color-dark);
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox__mark-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--special-deep-color-light);
+  margin-right: 16px;
+}
+
+.checkbox__control[type="checkbox"]:checked + .checkbox__mark-control::before {
+  display: block;
+  content: "";
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
 }

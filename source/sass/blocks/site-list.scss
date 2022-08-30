@@ -2,15 +2,16 @@
 .site-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  text-transform: uppercase;
+  flex-direction: column;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
+  cursor: pointer;
+
 
   @media (min-width: $tablet-width) {
     min-width: 442px;
+    font-weight: 400;
+    justify-content: space-between;
+    flex-direction: row;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,4 +22,58 @@
 .site-list__link {
   text-decoration: none;
   color: var(--main-color-dark);
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 23px 70px;
+  font-size: 20px;
+  line-height: 1;
+  text-transform: uppercase;
+  border-top: 1px solid var(--special-deep-color-grey-neutral);
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 0;
+    font-size: 18px;
+    line-height: math.div(24, 18);
+    border: none;
+
+    &:hover {
+      color: var(--main-color-dark-opacity-1);
+    }
+
+    &:active {
+      color: var(--main-color-dark-opacity-2);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: math.div(30, 20);
+  }
+
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      color: var(--main-color);
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      &:active {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid var(--basic-color);
+    }
+  }
+
+  &--active-desktop {
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid var(--main-color);
+    }
+  }
 }

@@ -1,44 +1,130 @@
 .promo {
   font-family: var(--second-font);
-  background-color: var(--main-color);
-  color: var(--main-color);
   text-align: center;
+  color: var(--main-color);
+
+  @media (min-width: $tablet-width) {
+    color: var(--main-color-dark);
+    text-align: start;
+  }
 }
 
 .promo__wrapper {
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
-}
+  position: relative;
+  padding-top: 40px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: var(--basic-color-light);
+    background-image: url("../img/cat-background-promo-main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--main-color);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 100vw;
+    height: 302px;
+    z-index: -1;
 
-.promo__background-wrapper {
-  background-color: var(--basic-color-light);
-  background-image: url("../img/cat-background-main.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 302px;
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    align-items: flex-start;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+    padding-bottom: 267px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 75%;
+      width: 50%;
+      height: 694px;
+      background-image: url("../img/cat-background-promo-desktop.jpg");
+      background-color: var(--basic-color-light);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top right;
+      display: block;
+      z-index: -1;
+    }
+  }
 }
 
 
 .promo__title {
   font-weight: 400;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 40px;
+  }
 }
 
 .promo__text {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 50px;
+  }
 }
 
 .promo__link {
   font-size: 14px;
-  line-height: 18px;
+  line-height: math.div(18, 14);
   text-transform: uppercase;
-  text-decoration: none;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 220px;
+    font-size: 20px;
+    line-height: 1;
+    padding: 16px 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    bottom: 0;
+  }
 }
 
 .promo__image {
-  display: block;
+  margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 141px;
+  }
 }

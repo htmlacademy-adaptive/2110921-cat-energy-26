@@ -1,5 +1,20 @@
 .goal__list {
   margin: 0;
-  padding: 0;
+  padding: 22px 0 19px;
   list-style-type: none;
+  border-top: 1px solid var(--special-deep-color-grey);
+  border-bottom: 1px solid var(--special-deep-color-grey);
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid var(--special-deep-color-grey);
+    padding: 25px 28px;
+  }
+}
+
+.goal__item {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

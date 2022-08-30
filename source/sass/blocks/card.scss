@@ -3,6 +3,9 @@
 
   @media (min-width: $tablet-width) {
     background-color: var(--special-light-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
@@ -12,12 +15,98 @@
 
 .card__link {
   text-decoration: none;
+  max-width: 76px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 130px;
+    text-align: center;
+  }
+}
+
+.card__link-image {
+  text-decoration: none;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 46px;
+  }
 }
 
 .card__title {
   font-weight: 400;
   font-size: 16px;
-  line-height: 20px;
+  line-height: math.div(20, 16);
+  margin: 0;
+  margin-bottom: 14px;
   color: var(--special-deep-color-dark);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: math.div(24, 20);
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: math.div(21, 20);
+  }
+}
+
+.card__container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 33px;
+  }
+}
+
+.card__wrapper-image {
+  padding: 0 28px;
+
+  &--small {
+    padding: 0 36px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 15px;
+    }
+  }
+}
+
+.card__image {
+  display: block;
+}
+
+.card__wrapper-information {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 5px;
+  }
+}
+
+.card__button-wrapper {
+  @media (min-width: $tablet-width) {
+    max-width: 248px;
+    margin: 0 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 168px;
+    margin: 0 8px 0 4px;
+  }
 }
