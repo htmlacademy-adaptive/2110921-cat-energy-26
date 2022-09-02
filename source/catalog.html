@@ -46,8 +46,13 @@
             <div class="card__container">
               <a class="card__link-image" href="#" tabindex="-1">
                 <div class="card__wrapper-image card__wrapper-image--small">
-                  <img class="card__image" src="img/cat-energy-chicken-500g.png" width="68" height="86"
-                    alt="Корм Кэт энерджи про со вкусом курицы, упаковка 500 грамм.">
+                  <picture>
+                    <source media="(min-width: 768px)"
+                      srcset="img/cat-energy-chicken-500g-tablet.png 1x, cat-energy-chicken-500g-tablet@2x.png 2x">
+                    <img class="card__image" src="img/cat-energy-chicken-500g-mobile.png" width="68" height="86"
+                      srcset="img/cat-energy-chicken-500g-mobile@2x.png 2x"
+                      alt="Корм Кэт энерджи про со вкусом курицы, упаковка 500 грамм.">
+                  </picture>
                 </div>
               </a>
               <div class="card__wrapper-information">
@@ -78,8 +83,15 @@
             <div class="card__container">
               <a class="card__link-image" href="#" tabindex="-1">
                 <div class="card__wrapper-image">
-                  <img class="card__image" src="img/cat-energy-chicken-1000g.png" width="84" height="101"
-                    alt="Корм Кэт энерджи про со вкусом курицы, упаковка 1000 грамм.">
+                  <picture>
+                    <source media="(min-width: 1440px)"
+                      srcset="img/cat-energy-chicken-1000g-desktop.png 1x, cat-energy-chicken-1000g-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/cat-energy-chicken-1000g-tablet.png 1x, cat-energy-chicken-1000g-tablet@2x.png 2x">
+                    <img class="card__image-large" src="img/cat-energy-chicken-1000g-mobile.png" width="84" height="101"
+                      srcset="img/cat-energy-chicken-1000g-mobile@2x.png 2x"
+                      alt="Корм Кэт энерджи про со вкусом курицы, упаковка 1000 грамм.">
+                  </picture>
                 </div>
               </a>
               <div class="card__wrapper-information">
