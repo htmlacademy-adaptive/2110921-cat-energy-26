@@ -41,11 +41,13 @@
     position: relative;
     align-items: flex-start;
     padding-bottom: 0;
+    padding-left: 87px;
   }
 
   @media (min-width: $desktop-width) {
     position: static;
     padding-bottom: 267px;
+    padding-left: 80px;
 
     &::before {
       position: absolute;
@@ -103,28 +105,36 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: 220px;
+    top: 270px;
     font-size: 20px;
     line-height: 1;
-    padding: 16px 27px;
+    padding: 17px 27px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
-    bottom: 0;
+    top: 0;
   }
 }
 
 .promo__image {
+  display: block;
   margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
-    align-self: center;
+    width: 709px;
+    height: 609px;
+    margin-top: -19px;
+    margin-left: -87px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 141px;
+    align-self: center;
+    width: 552px;
+    height: 499px;
+    top: 164px;
+    left: 723px;
   }
 }

@@ -8,6 +8,11 @@
   flex-direction: column;
   align-items: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-in-bag@2x.jpg");
+    background-size: 280px auto;
+  }
+
   &::before {
     display: block;
     content: "";
@@ -36,6 +41,11 @@
     display: grid;
     grid-template-columns: 80px 161px;
     column-gap: 265px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-in-bag-tablet@2x.jpg");
+      background-size: 707px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -46,6 +56,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-in-bag-desktop@2x.jpg");
+      background-size: 245px auto;
+    }
   }
 }
 

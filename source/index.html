@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -50,8 +51,14 @@
       <div class="promo__wrapper container">
         <h2 class="promo__title">Функциональное<br>питание для котов</h2>
         <p class="promo__text">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="img/promo-food-chicken-mobile.png" width="280" height="270"
-          srcset="img/promo-food-chicken-mobile@2x.png 2x" alt="Внешний вид продукции Кэт энерджи со вкусом курицы.">
+        <picture>
+          <source media="(min-width: 1440px)"
+            srcset="img/promo-food-chicken-desktop.png 1x, img/promo-food-chicken-desktop@2x.png 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/promo-food-chicken-tablet.png 1x, img/promo-food-chicken-tablet@2x.png 2x">
+          <img class="promo__image" src="img/promo-food-chicken-mobile.png" width="280" height="270"
+            srcset="img/promo-food-chicken-mobile@2x.png 2x" alt="Внешний вид продукции Кэт энерджи со вкусом курицы.">
+        </picture>
         <a class="promo__link button" href="form.html">Подобрать программу</a>
       </div>
     </section>

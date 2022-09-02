@@ -68,17 +68,17 @@
   }
 }
 
-.card__wrapper-image {
-  padding: 0 28px;
+// .card__wrapper-image {
+//   padding: 0 28px;
 
-  &--small {
-    padding: 0 36px;
+//   &--small {
+//     padding: 0 36px;
 
-    @media (min-width: $tablet-width) {
-      padding-top: 15px;
-    }
-  }
-}
+//     @media (min-width: $tablet-width) {
+//       padding-top: 15px;
+//     }
+//   }
+// }
 
 .card__image {
   display: block;
