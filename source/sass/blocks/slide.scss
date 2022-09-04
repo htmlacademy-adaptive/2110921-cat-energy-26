@@ -1,10 +1,20 @@
 .slide__scale {
   position: absolute;
+  display: block;
   top: 0;
   left: 50%;
   height: 256px;
   width: 4px;
   background-color: var(--special-deep-color-normal);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--basic-color);
+  }
+
+  &:active {
+    background-color: var(--basic-color-dark-opacity);
+  }
 }
 
 .slide__toggle {
@@ -23,14 +33,34 @@
   box-sizing: border-box;
   cursor: pointer;
 
+
   &::before {
     content: "";
+    display: block;
     width: 24px;
     height: 18px;
-    background-image: url("../img/slider-arrows.svg");
-    background-repeat: no-repeat;
+    background-color: var(--special-deep-color-normal);
+    mask-image: url("../img/slider-arrows.svg");
+    mask-repeat: no-repeat;
   }
 }
+
+.slide__scale:hover .slide__toggle::before {
+  background-color: var(--basic-color);
+}
+
+.slide__scale:active .slide__toggle::before {
+  background-color: var(--basic-color-dark-opacity);
+}
+
+.slide__scale:hover .slide__toggle {
+  border-color: var(--basic-color);
+}
+
+.slide__scale:active .slide__toggle {
+  border-color: var(--basic-color-dark-opacity);
+}
+
 
 .slide {
   display: flex;

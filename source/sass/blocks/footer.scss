@@ -20,11 +20,21 @@
 }
 
 .footer__logo {
+  display: block;
   padding-top: 39px;
   padding-bottom: 32px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
