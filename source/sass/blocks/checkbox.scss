@@ -3,6 +3,7 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .checkbox__mark-control {
@@ -14,6 +15,17 @@
   height: 30px;
   border: 1px solid var(--special-deep-color-light);
   margin-right: 16px;
+
+  &:hover {
+    border-color: var(--normal-color-grey);
+  }
+
+
+  @media (min-width: $tablet-width) {
+    margin-right: 19px;
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .checkbox__control[type="checkbox"]:checked + .checkbox__mark-control::before {
@@ -23,4 +35,20 @@
   height: 14px;
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 19px;
+    background-image: url("../img/tick-tablet.svg");
+  }
+}
+
+.checkbox__control[type="checkbox"]:focus + .checkbox__mark-control {
+  border-color: var(--special-deep-color-medium);
+}
+
+.checkbox__control[type="checkbox"]:disabled + .checkbox__mark-control {
+  border-color: var(--normal-color-grey);
+  opacity: 0.3;
+  cursor: default;
 }
