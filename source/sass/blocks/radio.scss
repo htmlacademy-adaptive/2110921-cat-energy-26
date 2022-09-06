@@ -3,6 +3,7 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 
@@ -16,6 +17,10 @@
   border-radius: 50%;
   border: 1px solid var(--special-deep-color-light);
   margin-right: 15px;
+
+  &:hover {
+    border-color: var(--normal-color-grey);
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 19px;
@@ -36,4 +41,14 @@
     width: 18px;
     height: 18px;
   }
+}
+
+.radio__control[type="radio"]:focus + .radio__mark-control {
+  border-color: var(--special-deep-color-medium);
+}
+
+.radio__control[type="radio"]:disabled + .radio__mark-control {
+  border-color: var(--normal-color-grey);
+  opacity: 0.3;
+  cursor: default;
 }
