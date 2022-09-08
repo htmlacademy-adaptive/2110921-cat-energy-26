@@ -16,31 +16,14 @@
   height: 22px;
   justify-content: center;
   align-items: center;
+  fill: var(--special-deep-color-normal);
 
-  &--vkontakte::before {
-    display: block;
-    content: "";
-    width: 27px;
-    height: 17px;
-    background-image: url("../img/vk-icon.svg");
-    background-repeat: no-repeat;
+  &:hover {
+    fill: var(--basic-color);
   }
 
-  &--youtube::before {
-    display: block;
-    content: "";
-    width: 24px;
-    height: 19px;
-    background-image: url("../img/youtube-icon.svg");
-    background-repeat: no-repeat;
-  }
-
-  &--telegram::before {
-    display: block;
-    content: "";
-    width: 20px;
-    height: 17px;
-    background-image: url("../img/telegram-icon.svg");
-    background-repeat: no-repeat;
+  &:active {
+    fill: var(--basic-color);
+    opacity: 0.3;
   }
 }

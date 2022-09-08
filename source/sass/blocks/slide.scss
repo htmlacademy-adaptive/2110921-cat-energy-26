@@ -1,38 +1,27 @@
 .slide__scale {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 50%;
-  height: 256px;
-  width: 4px;
-  background-color: var(--special-deep-color-normal);
-  cursor: pointer;
-
-  &:hover {
-    background-color: var(--basic-color);
-  }
-
-  &:active {
-    background-color: var(--basic-color-dark-opacity);
-  }
-}
-
-.slide__toggle {
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 50%;
-  right: -18px;
   transform: translateY(-20px);
   width: 40px;
   height: 40px;
-  border: 2px solid var(--special-deep-color-normal);
   border-radius: 50%;
+  border: 2px solid var(--special-deep-color-normal);
+  background-color: var(--main-color);
   padding: 0;
-  box-sizing: border-box;
   cursor: pointer;
 
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 256px;
+    width: 4px;
+    background-color: var(--special-deep-color-normal);
+  }
 
   &::before {
     content: "";
@@ -43,22 +32,24 @@
     mask-image: url("../img/slider-arrows.svg");
     mask-repeat: no-repeat;
   }
+
+  &:hover {
+    border-color: var(--basic-color);
+  }
+
+  &:active {
+    border-color: var(--basic-color-dark-opacity);
+  }
 }
 
-.slide__scale:hover .slide__toggle::before {
+.slide__scale:hover::before,
+.slide__scale:hover::after {
   background-color: var(--basic-color);
 }
 
-.slide__scale:active .slide__toggle::before {
+.slide__scale:active::before,
+.slide__scale:active::after {
   background-color: var(--basic-color-dark-opacity);
-}
-
-.slide__scale:hover .slide__toggle {
-  border-color: var(--basic-color);
-}
-
-.slide__scale:active .slide__toggle {
-  border-color: var(--basic-color-dark-opacity);
 }
 
 
@@ -66,6 +57,7 @@
   display: flex;
   position: relative;
   justify-content: center;
+  align-items: center;
 }
 
 .slide__images-before {
