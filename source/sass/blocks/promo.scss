@@ -19,10 +19,12 @@
   &::before {
     content: "";
     position: absolute;
-    background-color: var(--basic-color-light);
-    background-image: url("../img/cat-background-promo-main.jpg");
+    // background-color: var(--basic-color-light);
+    background-image: url("../img/cat-background-promo-main.jpg"),
+      linear-gradient(var(--basic-color-dark), var(--basic-color-dark));
     background-repeat: no-repeat;
-    background-size: cover;
+    // background-size: cover;
+    background-position: center;
     color: var(--main-color);
     top: 0;
     left: 50%;
@@ -41,13 +43,11 @@
     position: relative;
     align-items: flex-start;
     padding-bottom: 0;
-    // padding-left: 87px;
   }
 
   @media (min-width: $desktop-width) {
     position: static;
-    padding-bottom: 267px;
-    padding-left: 80px;
+    padding-bottom: 82px;
 
     &::before {
       position: absolute;
@@ -56,11 +56,12 @@
       left: 75%;
       width: 50%;
       height: 694px;
-      background-image: url("../img/cat-background-promo-desktop.jpg");
-      background-color: var(--basic-color-light);
+      background-image: url("../img/cat-background-promo-desktop.jpg"),
+        linear-gradient(var(--basic-color-dark), var(--basic-color-dark));
+      // background-color: var(--basic-color-light);
       background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+      // background-size: cover;
+      background-position: right center;
       display: block;
       z-index: -1;
     }
@@ -115,8 +116,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
-    top: 0;
+    top: 437px;
   }
 }
 
@@ -132,10 +132,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
+    position: relative;
+    margin-bottom: -225px;
     width: 552px;
     height: 499px;
-    top: 164px;
-    right: 330px;
+    bottom: 286px;
+    left: 447px;
   }
 }
