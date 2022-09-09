@@ -19,11 +19,10 @@
   &::before {
     content: "";
     position: absolute;
-    // background-color: var(--basic-color-light);
+    background-color: var(--basic-color-background);
     background-image: url("../img/cat-background-promo-main.jpg"),
-      linear-gradient(var(--basic-color-dark), var(--basic-color-dark));
+      linear-gradient(var(--basic-color-background), var(--basic-color-backgroud-2));
     background-repeat: no-repeat;
-    // background-size: cover;
     background-position: center;
     color: var(--main-color);
     top: 0;
@@ -56,11 +55,8 @@
       left: 75%;
       width: 50%;
       height: 694px;
-      background-image: url("../img/cat-background-promo-desktop.jpg"),
-        linear-gradient(var(--basic-color-dark), var(--basic-color-dark));
-      // background-color: var(--basic-color-light);
+      background-image: url("../img/cat-background-promo-desktop.jpg");
       background-repeat: no-repeat;
-      // background-size: cover;
       background-position: right center;
       display: block;
       z-index: -1;
