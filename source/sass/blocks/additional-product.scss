@@ -38,10 +38,7 @@
     background-color: var(--basic-color);
     z-index: -1;
     width: 100vw;
-
-    @media (min-width: $tablet-width) {
-      margin-left: calc(50% - 50vw);
-    }
+    margin-left: calc(50% - 50vw);
   }
 }
 
