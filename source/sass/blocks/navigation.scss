@@ -12,7 +12,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 14px;
 
   @media (min-width: $tablet-width) {
     align-items: center;
@@ -89,7 +89,7 @@
 .navigation--opened .site-list {
   background-color: var(--main-color);
   position: absolute;
-  top: 66px;
+  top: 63px;
   z-index: 2;
   width: 100vw;
   margin-left: calc(50% - 50vw);
@@ -121,7 +121,7 @@
 
 .navigation__logo {
   height: 38px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 
 
   @media (min-width: $tablet-width) {
