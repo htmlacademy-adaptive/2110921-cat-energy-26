@@ -10,7 +10,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 58px 0 55px 0;
+    padding: 61px 0 55px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,6 +27,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    padding-top: 4px;
   }
 
   &:hover {
@@ -36,6 +37,10 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.footer__logo-label {
+  display: block;
 }
 
 .footer__social {

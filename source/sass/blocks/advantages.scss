@@ -2,7 +2,7 @@
   padding: 20px 0 49px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 0 47px 0;
+    padding: 46px 0 47px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,6 +22,7 @@
     font-size: 60px;
     line-height: 1;
     margin-bottom: 32px;
+    margin-left: 2px;
   }
 }
 
@@ -36,7 +37,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 37px 136px;
+    gap: 37px 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -139,10 +140,22 @@
   color: var(--special-deep-color-medium);
   margin: 0;
 
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: math.div(24, 16);
     position: inherit;
     padding-top: 111px;
+  }
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: none;
+    }
   }
 }
