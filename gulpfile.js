@@ -8,7 +8,9 @@ import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
-import squoosh from 'gulp-libsquoosh'
+import squoosh from 'gulp-libsquoosh';
+import svgo from 'gulp-svgmin';
+import svgstore from "gulp-svgstore";
 
 // Styles
 
@@ -38,28 +40,39 @@ const html = () => {
 const scripts = () => {
   return gulp.src('source/js/script.js')
   .pipe(terser())
-  .pipe(gulp.dest('build/js'))
+  .pipe(gulp.dest('build/js'));
 }
 
 //Images
-export const optimizeImages = () => {
+const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(squoosh())
-  .pipe(gulp.dest('build/img'))
+  .pipe(gulp.dest('build/img'));
 }
 
-const copyImages = () => {
+export const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-  .pipe(gulp.dest('build/img'))
+  .pipe(gulp.dest('build/img'));
 }
 
 //WebP
 const createWebp = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src(['source/img/**/*.{jpg,png}', '!source/img/favicons/*'])
   .pipe(squoosh({
     wedP: {}
   }))
-  .pipe(gulp.dest('build/img'))
+  .pipe(gulp.dest('build/img'));
+}
+
+//SVG
+const svg = () => {
+  gulp.src(['source/img/*.svg', '!source/img/favicons/*.svg'])
+  .pipe(svgo())
+  .pipe(gulp.dest('build/img'));
+}
+
+const sprite = () => {
+
 }
 
 // Server

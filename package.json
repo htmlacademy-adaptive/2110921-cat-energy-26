@@ -13,6 +13,8 @@
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
     "gulp-rename": "^2.0.0",
+    "gulp-svgmin": "^4.1.0",
+    "gulp-svgstore": "^9.0.0",
     "gulp-terser": "^2.1.0",
     "postcss": "8.3.11",
     "postcss-csso": "^6.0.1",
@@ -24,7 +26,9 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
-    "start": "gulp"
+    "start": "gulp",
+    "copyimg": "gulp copyImages"
+
   },
   "browserslist": [
     "last 2 versions",
