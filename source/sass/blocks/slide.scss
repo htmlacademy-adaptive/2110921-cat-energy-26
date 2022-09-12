@@ -3,8 +3,6 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 50%;
-  transform: translateY(-20px);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -12,11 +10,6 @@
   background-color: var(--main-color);
   padding: 0;
   cursor: pointer;
-
-
-  @media (min-width: $desktop-width) {
-    transform: translateY(-63px);
-  }
 
 
   &::before {
@@ -27,6 +20,7 @@
     width: 4px;
     border-radius: 2px;
     background-color: var(--special-deep-color-normal);
+    z-index: -1;
 
 
     @media (min-width: $tablet-width) {
@@ -69,6 +63,7 @@
   position: relative;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 
   @media (min-width: $desktop-width) {
     align-items: flex-start;
@@ -80,6 +75,7 @@
   display: flex;
   width: 140px;
   overflow: hidden;
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
     width: 280px;
@@ -92,6 +88,7 @@
   width: 140px;
   overflow: hidden;
   justify-content: flex-end;
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
     width: 280px;

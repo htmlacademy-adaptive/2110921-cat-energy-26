@@ -49,6 +49,7 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: math.div(30, 20);
+    padding: 6px 0;
   }
 
   &--desktop {

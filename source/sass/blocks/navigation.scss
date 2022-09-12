@@ -8,6 +8,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 3px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .navigation__wrapper {
