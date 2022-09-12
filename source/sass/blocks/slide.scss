@@ -14,13 +14,20 @@
   cursor: pointer;
 
 
+  @media (min-width: $desktop-width) {
+    transform: translateY(-63px);
+  }
+
+
   &::before {
     content: "";
     position: absolute;
     display: block;
     height: 256px;
     width: 4px;
+    border-radius: 2px;
     background-color: var(--special-deep-color-normal);
+
 
     @media (min-width: $tablet-width) {
       height: 512px;
@@ -62,6 +69,10 @@
   position: relative;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+  }
 }
 
 .slide__images-before {
@@ -70,10 +81,9 @@
   width: 140px;
   overflow: hidden;
 
-  // @media (min-width: $tablet-width) {
-  //   width: 280px;
-  //   height: 512px;
-  // }
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
 }
 
 .slide__images-after {
@@ -83,26 +93,25 @@
   overflow: hidden;
   justify-content: flex-end;
 
-  // @media (min-width: $tablet-width) {
-  //   width: 280px;
-  //   height: 512px;
-  // }
+  @media (min-width: $tablet-width) {
+    width: 280px;
+  }
 }
 
-// .slide__image-after {
-//   display: block;
+.slide__image-after {
+  display: block;
 
-//   @media (min-width: $tablet-width) {
-//     width: 280px;
-//     height: 512px;
-//   }
-// }
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+}
 
-// .slide__image-before {
-//   display: block;
+.slide__image-before {
+  display: block;
 
-//   @media (min-width: $tablet-width) {
-//     width: 280px;
-//     height: 512px;
-//   }
-// }
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+}
