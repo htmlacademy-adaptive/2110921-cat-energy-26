@@ -134,7 +134,7 @@
           <li class="advantages__item advantages__item--effect">
             <p class="advantages__description">Уже через месяц наслаждайтесь изменениями
               к
-              лучшему<br>вашего питомца!</p>
+              лучшему<br> вашего питомца!</p>
           </li>
         </ol>
       </div>
@@ -146,7 +146,7 @@
           <div class="example__addition-wrapper">
             <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
               Energy
-              Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и<br>по-прежнему
+              Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и<br> по-прежнему
               спит
               по
               16 часов в день. </p>
@@ -168,12 +168,18 @@
 
         <div class="example__wrapper-image slide">
           <figure class="slide__images-before">
-            <img class="slide__image-before" src="img/cat-before.png" alt="Фото кота Бориса до функционального питания."
-              width="280" height="256">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
+              <img class="slide__image-before" src="img/cat-before-mobile.png" width="280" height="256"
+                srcset="img/cat-before-mobile@2x.png 2x" alt="Фото кота Бориса до функционального питания.">
+            </picture>
           </figure>
           <figure class="slide__images-after">
-            <img class="slide__image-after" src="img/cat-after.png"
-              alt="Фото кота Бориса после функционального питания." width="280" height="256">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
+              <img class="slide__image-after" src="img/cat-after-mobile.png" width="280" height="256"
+                srcset="img/cat-after-mobile@2x.png 2x" alt="Фото кота Бориса после функционального питания.">
+            </picture>
           </figure>
           <button class="slide__scale" type="button">
             <span class="visually-hidden">Посмотреть изменения кота</span>
@@ -202,8 +208,8 @@
     </section>
     <div class="footer__wrapper container">
       <a class="footer__logo">
-        <img class="footer__logo-label" src="img/logo-cat-energy-footer-mobile.svg" alt="Логотип Кэт энерджи."
-          width="128" height="24">
+        <img class="footer__logo-label" src="img/logo-cat-energy-footer.svg" alt="Логотип Кэт энерджи." width="128"
+          height="24">
       </a>
       <section class="footer__social social">
         <h2 class="visually-hidden">Мы в социальных сетях</h2>
