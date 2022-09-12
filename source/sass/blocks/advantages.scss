@@ -22,7 +22,11 @@
     font-size: 60px;
     line-height: 1;
     margin-bottom: 32px;
-    margin-left: 2px;
+    margin-left: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -43,7 +47,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 82px;
+    column-gap: 77px;
   }
 }
 
@@ -90,6 +94,8 @@
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
+      left: 2px;
+      top: 39px;
     }
   }
 }
@@ -97,6 +103,7 @@
 .advantages__item--healthy {
   @media (min-width: $tablet-width) {
     width: 230px;
+    padding-left: 2px;
   }
 }
 
@@ -117,6 +124,7 @@
 .advantages__item--nutrition {
   @media (min-width: $tablet-width) {
     width: 247px;
+    padding-left: 2px;
   }
 }
 
@@ -155,7 +163,7 @@
 
   @media (min-width: $desktop-width) {
     br {
-      display: none;
+      display: block;
     }
   }
 }

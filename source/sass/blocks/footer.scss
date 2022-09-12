@@ -16,6 +16,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 57px;
   }
 }
 
@@ -44,7 +45,7 @@
 }
 
 .footer__social {
-  padding: 17px 74px;
+  padding: 19px 74px;
   border-top: 1px solid var(--special-deep-color-grey);
   border-bottom: 1px solid var(--special-deep-color-grey);
 

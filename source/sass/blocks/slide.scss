@@ -70,10 +70,10 @@
   width: 140px;
   overflow: hidden;
 
-  @media (min-width: $tablet-width) {
-    width: 280px;
-    height: 512px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   width: 280px;
+  //   height: 512px;
+  // }
 }
 
 .slide__images-after {
@@ -83,12 +83,26 @@
   overflow: hidden;
   justify-content: flex-end;
 
-  @media (min-width: $tablet-width) {
-    width: 280px;
-    height: 512px;
-  }
+  // @media (min-width: $tablet-width) {
+  //   width: 280px;
+  //   height: 512px;
+  // }
 }
 
-.slide__image-after {
-  display: block;
-}
+// .slide__image-after {
+//   display: block;
+
+//   @media (min-width: $tablet-width) {
+//     width: 280px;
+//     height: 512px;
+//   }
+// }
+
+// .slide__image-before {
+//   display: block;
+
+//   @media (min-width: $tablet-width) {
+//     width: 280px;
+//     height: 512px;
+//   }
+// }
