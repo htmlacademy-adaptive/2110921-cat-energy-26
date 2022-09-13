@@ -1,13 +1,26 @@
 .price {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    justify-content: flex-end;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: space-between;
+    padding-top: 7px;
+  }
+}
+
+.price__value {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    min-width: 92px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 83px;
+    text-align: left;
   }
 }

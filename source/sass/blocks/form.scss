@@ -157,21 +157,7 @@
   margin-left: -19px;
   background-color: var(--main-color);
   padding: 0 20px 0 19px;
-  max-width: 202px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    height: 2px;
-    background-color: var(--basic-color);
-    z-index: -1;
-    width: 100vw;
-
-    @media (min-width: $tablet-width) {
-      margin-left: calc(50% - 50vw);
-    }
-  }
+  width: min-content;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -179,13 +165,60 @@
     margin: 0;
     margin-bottom: 65px;
     padding: 0 39px;
-    max-width: 515px;
+    width: auto;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: -39px;
   }
 }
+
+.form__line-wrapper {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -45px;
+    height: 2px;
+    background-color: var(--basic-color);
+    z-index: -1;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+
+    @media (min-width: $tablet-width) {
+      top: -83px;
+    }
+  }
+
+  &--owner {
+    &::before {
+      top: -70px;
+
+      @media (min-width: $tablet-width) {
+        top: -83px;
+      }
+    }
+  }
+}
+
+// .form__field-line {
+//   position: relative;
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     height: 1px;
+//     width: 100vw;
+//     background-color: var(--special-deep-color-grey-bright);
+//     margin-left: calc(50% - 50vw);
+//     bottom: 0;
+
+//     @media (min-width: $tablet-width) {
+//       display: none;
+//     }
+//   }
+// }
 
 .form__text {
   font-family: inherit;

@@ -2,8 +2,6 @@
   margin: 0;
   padding: 22px 0 19px;
   list-style-type: none;
-  border-top: 1px solid var(--special-deep-color-grey);
-  border-bottom: 1px solid var(--special-deep-color-grey);
 
   @media (min-width: $tablet-width) {
     border: 1px solid var(--special-deep-color-grey);
@@ -16,5 +14,31 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.goal__line-wrapper {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100vw;
+    background-color: var(--special-deep-color-grey-bright);
+    margin-left: calc(50% - 50vw);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &::before {
+    bottom: 0;
+  }
+
+  &::after {
+    top: 0;
   }
 }

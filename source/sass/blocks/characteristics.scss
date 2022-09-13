@@ -12,7 +12,7 @@
 }
 
 .characteristics__value {
-  margin: 0;
+  margin-right: 3px;
 }
 
 .characteristics__wrapper {
@@ -27,6 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 169px;
+    min-width: 171px;
+    padding-top: 8px;
   }
 }

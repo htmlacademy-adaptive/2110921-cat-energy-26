@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicone32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
@@ -74,7 +74,7 @@
           </fieldset>
           <fieldset class="form__field form__field--bordered goal container">
             <legend class="visually-hidden">Цель</legend>
-            <ul class="goal__list">
+            <ul class="goal__list goal__line-wrapper">
               <li class="goal__item radio">
                 <label class="radio__label" for="weight-loss">
                   <input class="visually-hidden radio__control" type="radio" name="main-goal" id="weight-loss"
@@ -98,8 +98,8 @@
             </ul>
           </fieldset>
         </div>
-        <fieldset class="form__field line container">
-          <legend class="form__legend">Контактные данные (владельца кота)</legend>
+        <fieldset class="form__field form__line-wrapper form__line-wrapper--owner container">
+          <legend class="form__legend">Контактные&nbsp;данные (владельца кота)</legend>
           <div class="form__wrapper form__wrapper--grid">
             <div class="form__field-wrapper">
               <label class="form__field-label" for="email">E-mail:*</label>
@@ -130,14 +130,14 @@
             </div>
           </div>
         </fieldset>
-        <fieldset class="form__field line container">
+        <fieldset class="form__field form__line-wrapper container">
           <legend class="form__legend">Комментарий</legend>
           <div class="form__wrapper">
             <textarea class="form__text" name="comments" rows="10"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
-        <fieldset class="form__field line additionally container">
+        <fieldset class="form__field form__line-wrapper additionally container">
           <legend class="form__legend">Дополнительно</legend>
           <div class="form__wrapper">
             <ul class="additionally__list">
@@ -196,7 +196,7 @@
     </section>
     <div class="footer__wrapper container">
       <a class="footer__logo" href="index.html">
-        <img class="footer__logo-label" src="img/logo-cat-energy-mobile.svg" alt="Логотип Кэт энерджи." width="128"
+        <img class="footer__logo-label" src="img/logo-cat-energy-footer.svg" alt="Логотип Кэт энерджи." width="128"
           height="24">
       </a>
       <section class="footer__social social">

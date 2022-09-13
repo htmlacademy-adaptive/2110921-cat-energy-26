@@ -2,7 +2,7 @@
   background-color: var(--special-light-color-nornal);
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, var(--main-color) 65%, var(--special-light-color-nornal) 35%);
+    background: linear-gradient(to bottom, var(--main-color) 57%, var(--special-light-color-nornal) 43%);
   }
 
   @media (min-width: $desktop-width) {
@@ -22,9 +22,11 @@
     font-size: 60px;
     line-height: 1;
     margin-bottom: 63px;
+    margin-left: 3px;
 
     @media (min-width: $desktop-width) {
       margin-bottom: 76px;
+      margin-left: 0;
     }
   }
 }
@@ -36,6 +38,12 @@
   margin: 0;
   margin-bottom: 20px;
 
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: math.div(24, 16);
@@ -44,6 +52,10 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 69px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -136,12 +148,12 @@
     font-size: 20px;
     line-height: 1;
     margin: 0;
-    margin-top: 11px;
+    margin-top: 10px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    min-width: 338px;
+    min-width: 326px;
     justify-content: space-between;
     margin: 0;
   }
@@ -162,10 +174,10 @@
 }
 
 .example__wrapper {
-  padding: 25px 0 40px 0;
+  padding: 28px 0 39px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 0 100px 0;
+    padding: 43px 0 100px 3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -181,5 +193,15 @@
   @media (min-width: $desktop-width) {
     padding-top: 70px;
     padding-bottom: 75px;
+  }
+}
+
+.example__cost {
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }

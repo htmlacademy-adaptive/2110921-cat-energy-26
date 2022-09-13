@@ -1,11 +1,14 @@
 .extra-product__wrapper {
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 316px 316px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 324px 288px;
+    display: grid;
+    grid-template-columns: 325px 325px;
     align-items: center;
   }
 }
