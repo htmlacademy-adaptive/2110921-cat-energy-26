@@ -15,8 +15,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: math.div(40, 36);
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 0 41px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -35,11 +34,10 @@
   font-size: 14px;
   line-height: math.div(18, 14);
   color: var(--special-deep-color-medium);
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 19px;
 
-  @media (max-width: $mobile-width-only) {
-    br {
+  br {
+    @media (max-width: $mobile-width-only) {
       display: none;
     }
   }
@@ -60,8 +58,7 @@
 }
 
 .example__list {
-  margin: 0;
-  margin-bottom: 34px;
+  margin: 0 0 33px;
   display: grid;
   grid-template-columns: repeat(2, 124px);
   column-gap: 32px;

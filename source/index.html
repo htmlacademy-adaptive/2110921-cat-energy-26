@@ -133,7 +133,7 @@
           <li class="advantages__item advantages__item--effect">
             <p class="advantages__description">Уже через месяц наслаждайтесь изменениями
               к
-              лучшему<br> вашего питомца!</p>
+              лучшему&nbsp;<br> вашего питомца!</p>
           </li>
         </ol>
       </div>
@@ -145,10 +145,10 @@
           <div class="example__addition-wrapper">
             <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
               Energy
-              Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и<br> по-прежнему
-              спит
-              по
-              16 часов в день. </p>
+              Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и&nbsp;<br>
+              по-прежнему
+              спит по 16 часов в день.
+            </p>
             <div class="example__flex-wrapper">
               <dl class="example__list">
                 <div class="example__item">
@@ -204,7 +204,21 @@
               class="address__text-city">Санкт-Петербург</span></p>
         </div>
         <div class="address__map map">
-          <iframe
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/map-location-desktop.webp 1x, img/map-location-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/map-location-tablet.webp 1x, img/map-location-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-location-mobile.webp 1x, img/map-location-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)"
+              srcset="img/map-location-desktop.png 1x, img/map-location-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/map-location-tablet.png 1x, img/map-location-tablet@2x.png 2x">
+            <img class="map__location" src="img/map-location-mobile.png" width="320" height="362"
+              srcset="img/map-location-mobile@2x.png 2x"
+              alt="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург">
+          </picture>
+          <iframe class="map__place"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.606053502818!2d30.321641922476196!3d59.93867887950729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1662317360250!5m2!1sru!2sru"
             width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8, Санкт-Петербург"></iframe>
