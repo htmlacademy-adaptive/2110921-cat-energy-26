@@ -20,10 +20,13 @@
   height: 100%;
 }
 
-.map__location {
-  display: block;
+.map__wrapper {
   grid-column: 1/2;
   grid-row: 1/2;
+}
+
+.map__location {
+  display: block;
 
   @media (min-width: $tablet-width) {
     width: 768px;

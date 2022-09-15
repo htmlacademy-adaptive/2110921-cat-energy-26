@@ -10,7 +10,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 61px 0 55px 0;
+    padding: 56px 0 55px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,7 +28,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-top: 5px;
+    padding-top: 3px;
   }
 
   &:hover {

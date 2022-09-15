@@ -33,7 +33,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 46px;
+    bottom: 44px;
   }
 }
 
@@ -70,7 +70,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 31px;
+    margin-bottom: 32px;
   }
 }
 
@@ -103,11 +103,11 @@
 .card__wrapper-information {
   display: flex;
   flex-direction: column;
-  margin-bottom: 9px;
+  margin: 1px 0 9px;
 
   @media (min-width: $tablet-width) {
     align-items: center;
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 

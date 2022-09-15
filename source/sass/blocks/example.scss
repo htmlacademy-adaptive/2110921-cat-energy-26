@@ -21,11 +21,9 @@
     font-size: 60px;
     line-height: 1;
     margin-bottom: 63px;
-    margin-left: 3px;
 
     @media (min-width: $desktop-width) {
       margin-bottom: 76px;
-      margin-left: 0;
     }
   }
 }
@@ -115,7 +113,7 @@
     line-height: 1;
     background-color: var(--main-color);
     padding: 0 9px;
-    top: 60px;
+    top: 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -144,8 +142,7 @@
     align-items: flex-end;
     font-size: 20px;
     line-height: 1;
-    margin: 0;
-    margin-top: 10px;
+    margin: 10px 4px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -195,7 +192,7 @@
 
 .example__cost {
   @media (min-width: $tablet-width) {
-    margin-top: 10px;
+    margin-top: 9px;
   }
 
   @media (min-width: $desktop-width) {

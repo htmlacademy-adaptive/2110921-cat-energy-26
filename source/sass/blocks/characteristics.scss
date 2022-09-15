@@ -11,10 +11,6 @@
   }
 }
 
-.characteristics__value {
-  margin-right: 3px;
-}
-
 .characteristics__wrapper {
   display: flex;
   justify-content: space-between;
@@ -27,7 +23,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 171px;
+    min-width: 167px;
     padding-top: 8px;
   }
 }
