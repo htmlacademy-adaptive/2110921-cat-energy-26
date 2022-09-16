@@ -16,10 +16,16 @@
 .card__link {
   text-decoration: none;
   max-width: 76px;
+  padding-top: 2px;
 
   @media (min-width: $tablet-width) {
     max-width: 130px;
     text-align: center;
+    padding-top: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
   }
 }
 
@@ -60,6 +66,7 @@
 
 .card__container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 13px;
 
@@ -102,12 +109,14 @@
 
 .card__wrapper-information {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin: 1px 0 9px;
 
   @media (min-width: $tablet-width) {
     align-items: center;
     margin: 0;
+    margin-top: -4px;
   }
 }
 

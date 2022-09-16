@@ -65,12 +65,12 @@
               <input class="form__field-value" type="text" name="name" id="name" placeholder="Барсик" required>
             </div>
             <div class="form__field-wrapper">
-              <label class="form__field-label" for="weight">Вес (кг):*</label>
-              <input class="form__field-value form__field-value" type="number" min="1" step="0.5" name="weight"
-                id="weight" placeholder="7" required>
+              <label class="form__field-label form__field-label--weight" for="weight">Вес (кг):*</label>
+              <input class="form__field-value" type="number" min="1" step="0.5" name="weight" id="weight"
+                placeholder="7" required>
             </div>
             <div class="form__field-wrapper">
-              <label class="form__field-label" for="age">Возраст (лет):</label>
+              <label class="form__field-label form__field-label--age" for="age">Возраст (лет):</label>
               <input class="form__field-value" type="number" min="1" step="1" name="age" id="age" placeholder="7">
             </div>
           </fieldset>
@@ -104,7 +104,7 @@
           <legend class="form__legend">Контактные&nbsp;данные (владельца кота)</legend>
           <div class="form__wrapper form__wrapper--grid">
             <div class="form__field-wrapper">
-              <label class="form__field-label" for="email">E-mail:*</label>
+              <label class="form__field-label form__field-label--email" for="email">E-mail:*</label>
               <input class="form__field-value form__field-value--email" type="email" name="email" id="email"
                 placeholder="kuklachev@gmail.com" required>
               <svg class="form__field-icon form__field-icon--email" width="19" height="14" viewBox="0 0 19 14"
@@ -114,7 +114,7 @@
               </svg>
             </div>
             <div class="form__field-wrapper">
-              <label class="form__field-label" for="tel">Телефон:*</label>
+              <label class="form__field-label form__field-label--phone" for="tel">Телефон:*</label>
               <input class="form__field-value form__field-value--phone" type="tel" name="tel" id="tel"
                 placeholder="8 (960) 900-60-90" required>
               <svg class="form__field-icon form__field-icon--phone" width="20" height="21" viewBox="0 0 20 21"

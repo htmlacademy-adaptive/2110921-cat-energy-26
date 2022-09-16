@@ -8,7 +8,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 101px 58px;
+    gap: 102px 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,7 +19,7 @@
 }
 
 .product-cards__item {
-  padding: 20px 0 24px;
+  padding: 18px 0 24px;
 
   &:last-child {
     align-self: end;

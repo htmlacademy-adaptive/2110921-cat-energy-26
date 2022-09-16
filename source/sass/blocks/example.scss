@@ -3,6 +3,19 @@
 
   @media (min-width: $tablet-width) {
     background: linear-gradient(to bottom, var(--main-color) 57%, var(--special-light-color-nornal) 43%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100vw;
+      background-color: var(--special-deep-color-grey-bright);
+      margin-left: calc(50% - 50vw);
+
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -43,7 +56,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: math.div(24, 16);
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,7 +115,7 @@
   margin: 0;
   color: var(--special-deep-color-medium);
   position: absolute;
-  padding: 0 11px;
+  padding: 0 16px;
   text-align: center;
   text-transform: lowercase;
   top: 46px;
@@ -168,10 +181,10 @@
 }
 
 .example__wrapper {
-  padding: 28px 0 39px 0;
+  padding: 24px 0 39px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 0 100px 3px;
+    padding: 46px 0 100px 3px;
   }
 
   @media (min-width: $desktop-width) {

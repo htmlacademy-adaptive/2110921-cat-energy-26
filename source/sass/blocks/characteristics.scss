@@ -11,8 +11,13 @@
   }
 }
 
+.characteristics__value {
+  margin: 0;
+}
+
 .characteristics__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   min-width: 140px;
 

@@ -28,7 +28,7 @@
 
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 68px;
+    padding-bottom: 67px;
 
     &--bordered {
       padding-bottom: 75px;
@@ -51,10 +51,61 @@
   display: block;
   margin-right: 14px;
 
+  &--weight {
+    margin-right: 16px;
+  }
+
+  &--age {
+    margin-right: 16px;
+  }
+
+  &--email {
+    margin-right: 11px;
+  }
+
+  &--phone {
+    margin-right: 10px;
+  }
+
 
   @media (min-width: $tablet-width) {
     margin-right: 17px;
+
+    &--weight {
+      margin-right: 22px;
+    }
+
+    &--age {
+      margin-right: 19px;
+    }
+
+    &--email {
+      margin-right: 18px;
+    }
+
+    &--phone {
+      margin-right: 16px;
+    }
   }
+}
+
+.form__field-value[type="number"]::-webkit-outer-spin-button,
+.form__field-value[type="number"]::-webkit-inner-spin-button {
+  // stylelint-disable
+  -webkit-appearance: none;
+// stylelint-enable
+}
+
+.form__field-value[type="number"] {
+  // stylelint-disable
+  -moz-appearance: textfield;
+// stylelint-enable
+}
+
+.form__field-value[type="text"]::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
 }
 
 .form__field-value {
@@ -63,6 +114,7 @@
   line-height: math.div(18, 16);
   text-transform: uppercase;
   appearance: none;
+  margin: 0;
   padding: 12px 10px 13px 15px;
   border: 1px solid var(--special-deep-color-clear);
   flex-grow: 1;
@@ -170,7 +222,7 @@
   margin-bottom: 35px;
   margin-left: -19px;
   background-color: var(--main-color);
-  padding: 0 24px 0 19px;
+  padding: 0 22px 0 19px;
   width: min-content;
 
   @media (min-width: $tablet-width) {
@@ -233,10 +285,11 @@
   min-height: 150px;
   box-sizing: border-box;
   width: 100%;
-  padding: 7px 14px;
+  padding: 11px 14px;
   appearance: none;
   border: 1px solid var(--special-deep-color-clear);
   margin-bottom: -3px;
+  resize: none;
 
   &::placeholder {
     color: var(--special-deep-color-medium);
@@ -277,7 +330,7 @@
 }
 
 .form__button {
-  margin-top: 8px;
+  margin-top: 10px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -294,7 +347,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 282px auto;
-    column-gap: 60px;
+    column-gap: 63px;
     padding: 0 37px 72px 40px;
     margin-top: -14px;
   }
