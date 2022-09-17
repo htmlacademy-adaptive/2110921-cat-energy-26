@@ -17,13 +17,15 @@
   padding-top: 26px;
 
   &::before {
+    --bgi: url("../img/cat-background-promo-main.jpg");
     content: "";
     position: absolute;
     background-color: var(--basic-color-background);
-    background-image: url("../img/cat-background-promo-main.jpg"),
+    background-image: var(--bgi),
       linear-gradient(to right, var(--basic-color-background) 50%, var(--basic-color-backgroud-2) 50%);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: auto 100%;
     color: var(--main-color);
     top: 0;
     left: 50%;
@@ -34,13 +36,7 @@
     z-index: -1;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/cat-background-promo-main@2x.jpg"),
-        linear-gradient(to right, var(--basic-color-background) 50%, var(--basic-color-backgroud-2) 50%);
-      width: 100vw;
-      height: 300px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+      --bgi: url("../img/cat-background-promo-main@2x.jpg");
     }
 
     @media (min-width: $tablet-width) {
@@ -58,7 +54,6 @@
   @media (min-width: $desktop-width) {
     position: static;
     padding: 84px 0 82px 0;
-
 
     &::before {
       position: absolute;
