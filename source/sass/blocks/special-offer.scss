@@ -1,4 +1,4 @@
-.special-offer__wrapper {
+.special-offer {
   background-color: var(--basic-color-light);
   background-image: url("../img/cat-in-bag.jpg");
   background-repeat: no-repeat;
@@ -37,7 +37,7 @@
     background-image: url("../img/cat-in-bag-tablet.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 55px 124px 63px 79px;
+    padding: 58px 124px 62px 79px;
     display: grid;
     grid-template-columns: 80px 161px;
     column-gap: 265px;

@@ -25,11 +25,11 @@
 
 
   @media (min-width: $tablet-width) {
-    padding: 77px 314px 57px 54px;
+    padding: 77px 314px 57px 52px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 52px 59px 52px;
+    padding: 81px 52px 59px 52px;
   }
 
   &--slim::before {
@@ -46,7 +46,7 @@
       width: 200px;
       height: 212px;
       top: 79px;
-      left: 450px;
+      left: 446px;
       background-size: contain;
     }
 
@@ -54,7 +54,7 @@
       width: 100px;
       height: 106px;
       left: 52px;
-      top: 41px;
+      top: 45px;
     }
   }
 
@@ -71,7 +71,7 @@
     @media (min-width: $tablet-width) {
       width: 268px;
       height: 200px;
-      left: 413px;
+      left: 410px;
       top: 91px;
       background-size: cover;
     }
@@ -80,7 +80,7 @@
       width: 134px;
       height: 100px;
       left: 33px;
-      top: 47px;
+      top: 50px;
     }
   }
 }
@@ -94,13 +94,13 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 24px 0;
+    margin: 0 0 25px;
     font-size: 36px;
     line-height: 1;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 73px 162px;
+    margin: 0 0 74px 162px;
   }
 }
 
@@ -115,11 +115,11 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: math.div(24, 16);
-    margin-bottom: 52px;
+    margin-bottom: 51px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 27px;
+    margin-bottom: 26px;
   }
 
   &::before {

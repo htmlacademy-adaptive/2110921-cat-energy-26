@@ -12,11 +12,12 @@
 }
 
 .characteristics__value {
-  margin-right: 3px;
+  margin: 0;
 }
 
 .characteristics__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   min-width: 140px;
 
@@ -27,7 +28,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 171px;
+    min-width: 167px;
     padding-top: 8px;
   }
 }

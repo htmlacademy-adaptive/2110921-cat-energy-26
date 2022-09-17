@@ -8,14 +8,15 @@
 
 
   @media (min-width: $tablet-width) {
-    min-width: 440px;
+    width: 440px;
     font-weight: 400;
     justify-content: space-between;
     flex-direction: row;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 480px;
+    width: 480px;
+    margin-top: -7px;
   }
 }
 
@@ -32,7 +33,7 @@
   border-top: 1px solid var(--special-deep-color-grey-neutral);
 
   @media (min-width: $tablet-width) {
-    padding: 8px 0;
+    padding: 6px 0;
     font-size: 18px;
     line-height: math.div(24, 18);
     border: none;

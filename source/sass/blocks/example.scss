@@ -3,6 +3,19 @@
 
   @media (min-width: $tablet-width) {
     background: linear-gradient(to bottom, var(--main-color) 57%, var(--special-light-color-nornal) 43%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100vw;
+      background-color: var(--special-deep-color-grey-bright);
+      margin-left: calc(50% - 50vw);
+
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -15,18 +28,15 @@
   font-weight: 400;
   font-size: 36px;
   line-height: math.div(40, 36);
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 0 41px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 1;
     margin-bottom: 63px;
-    margin-left: 3px;
 
     @media (min-width: $desktop-width) {
       margin-bottom: 76px;
-      margin-left: 0;
     }
   }
 }
@@ -35,11 +45,10 @@
   font-size: 14px;
   line-height: math.div(18, 14);
   color: var(--special-deep-color-medium);
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 19px;
 
-  @media (max-width: $mobile-width-only) {
-    br {
+  br {
+    @media (max-width: $mobile-width-only) {
       display: none;
     }
   }
@@ -47,7 +56,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: math.div(24, 16);
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,8 +69,7 @@
 }
 
 .example__list {
-  margin: 0;
-  margin-bottom: 34px;
+  margin: 0 0 33px;
   display: grid;
   grid-template-columns: repeat(2, 124px);
   column-gap: 32px;
@@ -107,7 +115,7 @@
   margin: 0;
   color: var(--special-deep-color-medium);
   position: absolute;
-  padding: 0 11px;
+  padding: 0 16px;
   text-align: center;
   text-transform: lowercase;
   top: 46px;
@@ -118,7 +126,7 @@
     line-height: 1;
     background-color: var(--main-color);
     padding: 0 9px;
-    top: 60px;
+    top: 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -147,8 +155,7 @@
     align-items: flex-end;
     font-size: 20px;
     line-height: 1;
-    margin: 0;
-    margin-top: 10px;
+    margin: 10px 4px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -174,10 +181,10 @@
 }
 
 .example__wrapper {
-  padding: 28px 0 39px 0;
+  padding: 24px 0 39px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 0 100px 3px;
+    padding: 46px 0 100px 3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -198,7 +205,7 @@
 
 .example__cost {
   @media (min-width: $tablet-width) {
-    margin-top: 10px;
+    margin-top: 9px;
   }
 
   @media (min-width: $desktop-width) {
