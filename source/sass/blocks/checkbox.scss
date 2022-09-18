@@ -2,6 +2,7 @@
   color: var(--main-color-dark);
   text-transform: uppercase;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   cursor: pointer;
 }
